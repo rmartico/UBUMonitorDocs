@@ -6,6 +6,10 @@
 Welcome to UBUMonitor's documentation!
 ======================================
 
+.. image:: images/UBUMonitor-Logo.png
+  :width: 200
+  :alt: UBUMonitor Logo
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
