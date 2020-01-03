@@ -38,9 +38,9 @@ Contraseña modificada
 
 En el caso de que se haya modificado la contraseña de Moodle recientemente, se muestra una ventana emergente, indicando que se ha detectado un cambio en la contraseña y pide la anterior contraseña, que se tuviera en la fecha señalada.
 
-.. figure:: images/contraseña_antigua.png
+.. figure:: images/password_antiguo.png
   :width: 400
-  :alt: Login
+  :alt: Cambio de constraseña
   :align: center
   
   Cambio de contraseña
