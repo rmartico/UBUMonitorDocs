@@ -1,0 +1,42 @@
+Preguntas frecuentes
+====================
+
+**¿Puedo cambiar o borrar datos accidentalmente en mis cursos al usar UBUMonitor?**
+
+No. Esta aplicación solo lee datos del servidor y NO modifica ningún dato, por lo tanto no hay ningún riesgo en su uso.
+
+**¿Puedo ejecutar UBUMonitor sin conexión a red?**
+a
+No. Actualmente como mínimo siempre es necesario validarse inicialmente contra el host o servidor Moodle a través de la red. Una vez validado, si no se quieren actualizar datos, se podría trabajar sin red. 
+
+**¿Puedo tener instaladas varias versiones de UBUMonitor en el mismo equipo?**
+
+Sí. Se pueden tener tantas instalaciones como se quiera, puesto que cada una va en su directorio, sin afectar a las otras versiones.
+
+**¿Puedo borrar la caché de datos?**
+
+Sí. Simplemente podemos borrar manualmente desde el sistema operativo el directorio caché. Por el momento no existe una opción para realizar esto desde la aplicación.
+
+**¿Cómo puedo desinstalar UBUMonitor?**
+
+Simplemente borrando el directorio donde esté instalada la aplicación. Hay que tener en cuenta que se eliminan TODOS los ficheros locales y los datos descargados.
+
+**¿Estamos utilizando algún dato al que no deberíamos tener acceso legalmente en Moodle?**
+
+No. UBUMonitor solo lee los datos para los que tiene permiso el usuario actual. Todos los datos utilizados son los mismos de los que se dispone en Moodle. UBUMonitor simplemente limpia y ordena esos datos para facilitar su filtrado y mejorar su visualización.
+
+**¿Si ejecuto UBUMonitor en un equipo de terceros, debería desinstalar la aplicación al finalizar?**
+
+Los ficheros de la caché están encriptados y por lo tanto no se pueden leer sin conocer la contraseña. No hay peligro en dejarlos en otro equipo. Pero si se exportan los datos en formato .csv debemos ser conscientes de que esos datos están en formato de texto plano SIN encriptar. En tal caso sí deberíamos borrar esos ficheros.
+
+**¿Puedo ejecutar UBUMonitor desde un stick USB?**
+
+Sí siempre y cuando se utilice una versión portable, o bien se tenga instalado Java 8 en el equipo donde se conecta el stick USB.
+
+**Con algunas asignaturas se genera un error al cargar los datos.**
+
+Si no tenemos rol de profesor, no tendremos permisos suficientes para leer los datos y UBUMonitor genera un error. Compruebe que realmente es profesor de dicho curso.
+
+**La aplicación funciona, pero no visualiza correctamente los gráficos ¿por qué?**
+
+Comprobar que se está ejecutando la aplicación con una versión Java 8 que incluya las bibliotecas JavaFX. Para comprobar la versión actual, se puede abrir una consola del sistema operativo y ejecutar $> java -version. Se mostrará el número actual de versión instalada. Con versiones superiores se ha detectado que la visualización de gráficos no es correcta. Recordemos que las versiones libres (e.g. OpenJDK) tampoco funcionarán al no incluir JavaFX.

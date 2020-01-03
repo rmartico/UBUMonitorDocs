@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to UBUMonitor's documentation!
-======================================
+Manual de usuario para UBUMonitor
+=================================
 
 .. image:: images/UBUMonitor-Logo.png
   :width: 200
@@ -12,15 +12,14 @@ Welcome to UBUMonitor's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contenidos:
    
-   contents
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   introduction
+   install
+   login
+   courseselection
+   visualization/index
+   visualization/grades
+   visualization/logs
+   appendix
+   faq

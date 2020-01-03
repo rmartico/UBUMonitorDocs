@@ -1,4 +1,0 @@
-Contenidos
-==========
-
-Texto de prueba.
