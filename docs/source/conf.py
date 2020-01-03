@@ -80,5 +80,4 @@ html_theme_options = {
     'titles_only': False
 }
 
-# Added by RMS
-html_show_sourcelink = False
+master_doc = 'index'
