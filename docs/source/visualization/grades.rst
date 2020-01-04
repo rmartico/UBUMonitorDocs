@@ -23,6 +23,8 @@ Una vez seleccionada la pestaña **Calificaciones**, en la zona central, en la p
   :align: center
   
   Barra de herramientas de calificaciones
+  
+Se debe tener en cuenta que los **items no calificados** (con calificación "-") **no computan** para cálculo de las medias, ni en la generación de gráficos de tipo boxplot ni violín.
 
 Gráfico de líneas
 -----------------
@@ -81,7 +83,7 @@ Si seleccionamos un usuario particular, muestra sus calificaciones sobre el diag
 Gráfico de violín
 -----------------
 
-Muestra un gráfico de violines para las calificaciones de todos los alumnos y del conjunto de alumnos seleccionados, si los hubiera. Adicionalmente si se han filtrado los alumnos por grupo, también muestra el gráfico de violín para dicho grupo. En el gráfico de violines se representa la mediana como un diamante más grueso. Los outliers se representan como puntos azules gruesos.
+Muestra un gráfico de violines para las calificaciones de todos los alumnos y del conjunto de alumnos seleccionados, si los hubiera. Adicionalmente si se han filtrado los alumnos por grupo, también muestra el gráfico de violín para dicho grupo. En el gráfico de violines se representa la mediana como un diamante más grueso.
 
 .. figure:: images/GraficoViolin.png
   :width: 600
@@ -95,7 +97,7 @@ Si seleccionamos un usuario particular, muestra sus calificaciones sobre el diag
 Gráfico de violines de grupos
 -----------------------------
 
-Muestra un gráfico de violines para las calificaciones de todos los alumnos y de cada uno de los grupos en la asignatura. En el gráfico de violines se representa la mediana como un diamante más grueso. Los outliers se representan como puntos azules gruesos.
+Muestra un gráfico de violines para las calificaciones de todos los alumnos y de cada uno de los grupos en la asignatura. En el gráfico de violines se representa la mediana como un diamante más grueso.
 
 .. figure:: images/GraficoViolinDeGrupos.png
   :width: 600

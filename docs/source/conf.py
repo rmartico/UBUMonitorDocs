@@ -81,3 +81,4 @@ html_theme_options = {
 }
 
 master_doc = 'index'
+smartquotes = False
