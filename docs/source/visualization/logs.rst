@@ -33,6 +33,8 @@ Hay que tener en cuenta que la fecha de referencia  incial y final no toman todo
 
 También las agrupaciones por **Horas**, **AM/PM** y **Días de la semana** no usa el selector de fechas, por lo tanto se deshabilitan.
 
+En los gráficos de barras apiladas y heatmap, generados a partir de la selección de la pestaña de Registros, al hacer click sobre los puntos o elementos de un alumno concreto sobre el gráfico, se posiciona a su vez en el listado en el usuario correspondiente, para facilitar su identificación.
+
 En la zona izquierda inferior se muestran las posibles pestañas de selección de elementos sobre los que generar las gráficas: **Componentes**, **Eventos**, **Secciones** o **Módulos de curso**. Se permite selección múltiple sobre todos ellos.
 
 Componentes

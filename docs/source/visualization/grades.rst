@@ -26,6 +26,8 @@ Una vez seleccionada la pestaña **Calificaciones**, en la zona central, en la p
   
 Se debe tener en cuenta que los **items no calificados** (con calificación "-") **no computan** para cálculo de las medias, ni en la generación de gráficos de tipo boxplot ni violín.
 
+Indicar además que en los gráficos de líneas, radar y tabla de calificaciones, al hacer click sobre los puntos o elementos de un alumno concreto sobre el gráfico, se posiciona a su vez en el listado en el usuario correspondiente, para facilitar su identificación.
+
 Gráfico de líneas
 -----------------
 

@@ -57,7 +57,7 @@ También muestra los datos del usuario actual, el curso seleccionado, la URL de 
 Listado de usuarios matriculados
 --------------------------------
 
-En este apartado se muestra el listado de los usuarios matriculados en el curso, junto con su fotografía y el tiempo desde su último acceso al curso actual y a la plataforma de Moodle ya sea en minutos horas o días. Se toma como referencia la hora del sistema. 
+En este apartado se muestra el listado de los usuarios matriculados en el curso, junto con su fotografía y el tiempo desde su último acceso al curso actual y a la plataforma de Moodle ya sea en minutos, horas o días. Se toma como referencia la hora del sistema. 
 
 .. figure:: images/lista_usuarios_matriculados.png
   :width: 400
