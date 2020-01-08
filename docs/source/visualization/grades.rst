@@ -31,7 +31,7 @@ Indicar además que en los gráficos de líneas, radar y tabla de calificaciones
 Gráfico de líneas
 -----------------
 
-Muestra un gráfico de líneas donde se representan las notas de los alumnos para cada elemento del calificador seleccionado.
+Muestra un gráfico de líneas donde se representan las notas de los alumnos, reescaladas al rango [0, 10], para cada elemento del calificador seleccionado.
 
 .. figure:: images/GraficoLineas.png
   :width: 600

@@ -24,9 +24,9 @@ En la parte superior de la ventana muestra una barra de herramientas con diferen
 
 **Archivo**
 
-* **Cambiar asignatura**: vuelve a la ventana de **Elección del curso​**
+* **Cambiar asignatura**: cierra la ventana actual eliminando los datos y vuelve a la ventana de **Elección del curso​**
 
-* **Actualizar curso**: actualiza los datos del curso actual a través de la red.
+* **Actualizar curso**: descarga los registros de log más recientes y actualiza las calificaciones del curso actual, a través de la red.
 
 * **Guardar gráfico como...**: permite guardar en formato PNG el gráfico actual mostrado en la aplicación.
 
@@ -41,8 +41,8 @@ En la parte superior de la ventana muestra una barra de herramientas con diferen
    * ``roles.csv``: roles activos.
    * ``sections.csv``: secciones del curso.
 
-* **Cerrar sesión**: Cierra la sesión y vuelve a la pantalla de inicio.
-* **Salir**: Cierra la aplicación.
+* **Cerrar sesión**: cierra la sesión y vuelve a la pantalla de inicio.
+* **Salir**: cierra la aplicación.
 
 **Editar**
 
@@ -73,7 +73,7 @@ Los usuarios se colorean, según su fecha de última conexión al curso, para fa
 * *Azul*: si se ha conectado hace 3 a 6 días.
 * *Verde*: si se ha conectado en los últimos 2 días.
 
-Se permite la selección múltiple de varios usuarios mientras se mantiene pulsando la tecla Control.
+Se permite la selección múltiple de varios usuarios sueltos, manteniendo pulsada la tecla <Control> mientras se seleccionan con el ratón y usuarios contiguos pulsando la tecla <Mayús>. Con la combinación <Ctrl+A> se seleccionan todos los usuarios.
 
 También da la opción de aplicar cuatro filtros juntos de forma conjunta:
 
