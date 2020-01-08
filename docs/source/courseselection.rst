@@ -20,6 +20,8 @@ Cuando se haya seleccionado un curso y pulsamos en el botón **Entrar**, si la c
 
 Este proceso de descarga de datos del calificador y registro (log) puede tardar varios minutos, mostrando en la parte inferior una barra de progreso indicando las etapas realizadas (carga del calificador, descarga del log y actualización del mismo).
 
+Es **MUY IMPORTANTE** que en el calificador esté visible la información de porcentaje (por defecto está visible en Moodle) para una correcta lectura y visualización posterior de las calificaciones.
+
 Si no está marcada la opción **Actualizar datos**, abre directamente el fichero de la caché local y lo carga de forma casi instantánea. Se recuerda que el fichero local se cifra usando la contraseña de Moodle como clave, por motivos de seguridad. 
 
 En siguientes accesos a cursos previamente cargados, se mostrará ya la fecha de última actualización y se dará la opción de marcar o no la opción **Actualizar datos**.
