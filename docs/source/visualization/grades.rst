@@ -13,9 +13,9 @@ En la esquina inferior izquierda, en la pestaña de **Calificaciones**, se muest
 La vista muestra el equivalente al calificador configurado en Moodle. Existe dos tipos de filtros que se usan de modo conjunto:
 
 * **Campo de texto**: por nombre del elemento del calificador.
-* **Selector de tipo**: según el tipo que sea  (foro, tarea, cuestionario, etc.)
+* **Selector de tipo**: según el tipo de elemento de calificación (e.g. foro, tarea, cuestionario, etc.)
 
-Una vez seleccionada la pestaña **Calificaciones**, en la zona central, en la parte superior aparecen botones para seleccionar el tipo de gráfico a mostrar y para ocultar/mostrar la leyenda, estadísticas generales y estadísticas de grupos.
+Una vez seleccionada la pestaña **Calificaciones**, en la zona central principal de la aplicación se carga la zona de gráficos. En la parte superior aparecen botones para seleccionar el tipo de gráfico a mostrar y para ocultar/mostrar la leyenda, estadísticas generales y estadísticas de grupos.
 
 .. figure:: images/BarraHerramientasCalificaciones.png
   :width: 600
@@ -31,7 +31,7 @@ Indicar además que en los gráficos de líneas, radar y tabla de calificaciones
 Gráfico de líneas
 -----------------
 
-Muestra un gráfico de líneas donde se representan las notas de los alumnos, reescaladas al rango [0, 10], para cada elemento del calificador seleccionado.
+Muestra un gráfico de líneas donde se representan las notas de los alumnos, reescaladas al rango [0, 10], para cada elemento del calificador seleccionado. Se muestra también el valor medio como referencia.
 
 .. figure:: images/GraficoLineas.png
   :width: 600
@@ -52,12 +52,12 @@ Gráfico de tipo radar o también conocido como diagrama de araña o Kiviat. Muy
   
   Gráfico radar
   
-Se colorea en rojo la zona del radar inferior al 5, y en verde la zona del radar igual o mayor que 5.
+Se colorea en rojo la zona del radar inferior al 5, y en verde la zona del radar igual o mayor que 5. Se incluye el radar medio como referencia.
 
 Gráfico de boxplot
 ------------------
 
-Muestra la información de un boxplot o diagrama de caja y bigotes con las calificaciones de todos los alumnos. En este gráfico podemos ver los máximos, mínimos, la mediana, cuartiles primero y tercero, y ouliers si existiesen.
+Muestra la información de un boxplot o diagrama de caja y bigotes con las calificaciones de todos los alumnos. En este gráfico podemos ver los máximos, mínimos, la mediana, cuartiles primero y tercero, y *ouliers* (como puntos más gruesos) si existiesen.
 
 .. figure:: images/GraficoBoxPlot.png
   :width: 600
@@ -71,7 +71,7 @@ Si seleccionamos un usuario particular, muestra sus calificaciones sobre el diag
 Gráfico de boxplot de grupos
 -----------------------------
 
-Muestra la misma información que el gráfico anterior pero para los grupos de la asignatura. 
+Muestra la misma información que el gráfico anterior, pero para los grupos de la asignatura, facilitando su comparación. 
 
 .. figure:: images/GraficoBoxPlotDeGrupos.png
   :width: 600
