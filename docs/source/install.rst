@@ -24,7 +24,7 @@ Se ofrecen dos versiones:
 * Versión fichero ejecutable java (con extensión ``.jar``) para **TODAS** las plataformas.
 
 Versión portable para GNU/Linux
------------------------------
+-------------------------------
 
 Si se trabaja en GNU/Linux, y no se quiere instalar Java en el equipo actual (o no se quiere cambiar la configuración), se sugiere descargar la versión portable de 64 bits. 
 
