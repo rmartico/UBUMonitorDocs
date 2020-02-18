@@ -48,7 +48,7 @@ Suponiendo que se tiene ya instalada dicha versión Java 8 (y que es la versión
 Si Java está asociado correctamente a la extensión ``.jar`` se ejecutar la aplicación.
 Si no, ejecutar desde una consola del sistema operativo, en el directorio donde se tenga el fichero ``.jar`` lo siguiente: 
    
-* ``$> java -jar UBUMonitor.v2.5.0.jar``
+* ``$> java -jar UBUMonitor.v2.5.0-stable.jar``
 
 *Nota: el número de versión puede ir cambiando.*
 
