@@ -104,7 +104,7 @@ Los datos se presentan agrupados en dos bloques de alumnos y estadísticas, que 
 Gráfico de porcentajes
 ----------------------
 
-Muestra un diagrama de barras apiladas con el porcentaje de alumnos seleccionados que no tienen calificado (*N.C*), suspenden (*Suspenso*) o superan (*Aprobado*) cada uno de los items de calificación seleccionados.
+Muestra un diagrama de barras apiladas con el porcentaje de los alumnos seleccionados que no tienen calificación (*N.C*), suspenden (*Suspenso*) o superan (*Aprobado*) cada uno de los items de calificación seleccionados.
 
 .. figure:: images/Porcentajes.png
   :width: 600
