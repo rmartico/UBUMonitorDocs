@@ -1,7 +1,7 @@
 Introducción y requisitos
 =========================
 
-UBUMonitor es una *aplicación cliente de escritorio* que permite conectarse a un *servidor Moodle* para la monitorización de la actividad particular de los alumnos. Permite extraer los datos del calificador, registros (logs) y finalización de actividad de nuestras asignaturas, visualizando dichos datos de una manera más amigable para el profesor.
+UBUMonitor es una *aplicación cliente de escritorio* que permite conectarse a un *servidor Moodle* para la monitorización de la actividad particular de los alumnos. Permite extraer los datos de los registros (logs), calificador y finalización de actividad de nuestras asignaturas, visualizando dichos datos de una manera más amigable para el profesor.
 
 Requisitos de instalación
 -------------------------
@@ -26,6 +26,6 @@ Requisitos en Moodle
 
    * Configurar correctamente (en **Editar ajustes** del curso), en **General**, la  *Fecha de inicio del curso* y *Fecha de finalización del curso* (habilitada) en sus asignaturas. En caso contrario, la selección inicial de cursos (en las pestañas *En progreso*, *Futuros* y *Pasados*) y los filtros de fecha para los gráficos de registros **NO funcionarán correctamente**.
    * Tener **visibles los porcentajes** de la asignatura en el **calificador de Moodle**. En caso contrario **NO se podrán cargar los datos del calificador**.
-   * Activar en **Editar ajustes** del curso, en el apartado **Rastreo de finalización** la opción **Habilitar rastreo del grado de finalización**. Una vez realizado ese cambio se recomienda ajustar la opción **Finalización de actividad** para cada actividad y recurso, si se quiere utilizar el gráfico correspondiente.
+   * Activar en **Editar ajustes** del curso, en el apartado **Rastreo de finalización** la opción **Habilitar rastreo del grado de finalización**. Una vez realizado ese cambio se recomienda ajustar la opción **Finalización de actividad** para cada actividad y recurso, si se quiere utilizar la tabla correspondiente.
    * Tener **definidos grupos en la asignatura** si se quieren utilizar los filtros y gráficos particulares sobre grupos.
 

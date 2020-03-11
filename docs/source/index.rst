@@ -19,7 +19,10 @@ Manual de usuario para UBUMonitor
    login
    courseselection
    visualization/index
-   visualization/grades
    visualization/logs
+   visualization/grades  
+   visualization/activities
+   configuration
+   errormessages
    appendix
    faq
