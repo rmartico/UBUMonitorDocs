@@ -1,30 +1,47 @@
 Selección de curso/asignatura
 =============================
 
-En esta pantalla muestra un listado de cursos (o asignaturas) en los que está registrado el usuario actual. Se  permite seleccionar uno de ellos, para realizar la carga de datos y acceder a la siguiente pantalla. 
+En la parte superior se muestra el usuario, url del host, fecha de inicio de sesión y el modo de trabajo (onlines vs. offline). El botón **Cerrar sesión** permite volver a la ventana de inicio de sesión previa, cerrando la actual.
 
-Cuando se elige uno de los cursos, se muestra la información de fecha de la **Última actualización local**. Esta fecha indica la última actualización de datos, realizada en dicho curso (se muestra en función del fichero local de caché).  
+La zona principal muestra el listado de cursos (o asignaturas) en los que está registrado el usuario actual. Se  permite seleccionar uno de ellos, para realizar la carga de datos y acceder a la siguiente pantalla. Las asignaturas se presentan ordenadas alfabéticamente en pestañas de la siguiente forma:
 
-Si queremos forzar la actualización de datos, con el contenido actual del servidor, debemos marcar la opción de **Actualizar datos**. En caso contario se mostrarán los datos de la caché local que pudieran estar desactualizados.
+* **Recientes**: cursos accedidos recientemente por el usuario.
+* **Destacados**: cursos destacados por el usuario.
+* **Todos**: conjunto completo de cursos en el que el usuario está matriculado.
+* **En progreso**: en curso actual, con fecha de inicio y fin incluyendo a la fecha actual.
+* **Futuros**: cursos a realizar, con fecha de inicio posterior a la fecha actual.
+* **Pasados**: cursos ya finalizados, con fecha de fin anterior a la fecha actual.
 
-Si el curso nunca ha sido cargado previamente se mostrará siempre el texto **No disponible** y se marca por defecto la opción de **Actualizar datos**.
+*Nota*: es responsabilidad del usuario clasificar las asignaturas como *destacadas* (e incluso *ocultas*) en su *Área personal* de Moodle. Las fechas de inicio y fin de cada curso, se personalizan en *Editar ajustes* de cada asignatura.
 
 .. figure:: images/Seleccion_de_curso.png
   :width: 400
-  :alt: Login
+  :alt: Selección de curso en primer acceso
   :align: center
   
   Selección de curso (asignatura) en primer acceso
-  
-Cuando se haya seleccionado un curso y pulsamos en el botón **Entrar**, si la casilla de **Actualizar datos** está seleccionada, cargará el fichero en local (si existía) o lo crea en el primer acceso y actualiza los datos (usuarios matriculados, calificaciones, registros, etc...) conectándose por red con el servidor Moodle.
 
-Este proceso de descarga de datos del calificador y registro (o *logs*) puede **tardar varios minutos en la primera actualización** (en función del número de alumnos, tamaño del calificador y número de registros nuevos), mostrando en la parte inferior una barra de progreso indicando las etapas realizadas (carga del calificador, descarga del log y actualización del mismo). Posteriores actualizaciones serán más breves, puesto que la carga de registros es incremental, aunque el calificador siempre se actualiza por completo.
+La primera vez que se selecciona un curso se mostrará en **Última actualización local** el texto **No disponible** y se marca por defecto la opción de **Actualizar datos** para forzar la descarga de datos del servidor. 
 
-Es **MUY IMPORTANTE** que en el calificador esté visible la información de porcentaje (por defecto está visible en Moodle) para una correcta lectura y visualización posterior de las calificaciones.
+Adicionamente se deja la **opción avanzada** de descargar **Solo registros de web** si se quieren descargar solo registros desde el navegador (ignorando registros de tipo cliente, *web service*, *restore* o no clasificados). Por defecto está desmarcada y solo se recomienda su uso por usuarios avanzados.
 
-Si no está marcada la opción **Actualizar datos** (previamente ya se cargó la asignatura) abre directamente el fichero de la caché local y lo carga de forma casi instantánea. Se recuerda que el fichero local se **encripta** usando la contraseña de Moodle como clave, por motivos de seguridad. 
 
-En siguientes accesos a cursos previamente cargados, se mostrará ya la fecha de última actualización y se dará la opción de marcar o no la opción **Actualizar datos**.
+Presionamos el botón **Entrar** para iniciar la descarga. Este proceso de descarga de datos puede **tardar varios minutos en la primera descarga** (en función del número de alumnos, tamaño del calificador, número de registros nuevos y de actividades con rastreo de finalización activo). 
+
+
+Se mostrará en la parte inferior una barra de progreso indicando las etapas realizadas (carga del calificador, descarga de finalización de actividades, descarga del log y parseado de logs). **Posteriores actualizaciones serán más breves**, puesto que la carga de registros es incremental, aunque el calificador y la finalización de actividades siempre se actualiza por completo.
+
+
+Por otro lado, es **MUY IMPORTANTE** que en el calificador esté visible la información de porcentaje (por defecto está visible en Moodle) para una correcta lectura y visualización posterior de las calificaciones.
+
+Finalizada la descarga se pasará a mostrar la ventana principal de la aplicación.
+
+Actualización de datos
+----------------------
+
+En posteriores accesos a cursos previamente cargados, se mostrará ya la fecha de **Última actualización local** y se dará la opción de marcar, o no, la opción **Actualizar datos**.  
+
+Si queremos forzar la actualización de datos con el contenido actual del servidor, debemos marcar manualmente dicha opción. En caso contario, se cargaran y mostrarán los datos de la caché local (que pudieran estar desactualizados).
 
 .. figure:: images/Seleccion_de_curso_recargar_asignatura.png
   :width: 400
@@ -33,7 +50,37 @@ En siguientes accesos a cursos previamente cargados, se mostrará ya la fecha de
 
   Acceso posterior a asignatura cargada previamente
   
-Si la carga de datos ha sido correcta, se pasará a mostrar la ventana principal de la aplicación. En caso contrario, compruebe que tiene **rol de profesor** en el curso a cargar. Si el error se produce con la opción **Actualizar datos** desmarcada, compruebe que en el subdirectorio ``cache`` de su instalación de UBUMonitor no ha sufrido cambios externos o malintencionados.
+Limpieza de cache
+-----------------
+
+Seleccionando una asignatura previamente cargada, se activará el botón **Limpiar**. Dicho botón permite borrar la caché local de nuestra instalación actual de UBUMonitor.
+
+.. figure:: images/Boton_limpiar.png
+  :width: 100
+  :alt: Limpiar caché
+  :align: center
+
+  Limpiar caché
+
+
+Al desaparecer la caché, la asignatura se detecta como no cargada previamente, forzando siempre a utilizar la opción **Actualizar datos** en el siguiente acceso posterior. 
+
+
+Esta opción es útil para eliminar ficheros de asignaturas a las que ya no se va acceder en el futuro o cuando la versión instalada de UBUMonitor detecte problemas con la versión de fichero local y sea necesario su borrado (ver Sec. :ref:`errormessages`).
+
+
+Modo offline
+------------
+
+Si hemos seleccionado acceso en **Modo offline** solo se mostrarán las asignaturas disponibles en la caché local, en la pestaña *Archivos locales*. En este modo no es posible actualizar datos, pero sí acceder a la funcionalidad completa de visualización de datos.
+
+.. figure:: images/Seleccion_de_curso_offline.png
+  :width: 400
+  :alt: Selección de curso offline
+  :align: center
+  
+  Selección de curso (asignatura) offline
+
   
 Contraseña modificada
 ---------------------
@@ -47,6 +94,6 @@ En el caso de que se haya modificado la contraseña de Moodle recientemente, se 
   
   Cambio de contraseña
   
-Cuando se haya introducido correctamente la contraseña antigua, el fichero en caché local se guarda con la nueva. Esto es **obligatorio**, debido a que la información **siempre se guarda encriptada**.
+Cuando se haya introducido correctamente la contraseña antigua, el fichero en caché local se encripta y guarda con la nueva contraseña. Esto es **obligatorio**, debido a que la información **siempre se guarda encriptada**.
 
-**MUY IMPORTANTE**: es necesario recordar la contraseña previa, para poder recuperar los datos. En caso contrario se debe borrar manualmente la caché, para forzar a cargar los cursos nuevamente. En próximas versiones se incluiría una opción para el borrado de caché desde la aplicación.
+**MUY IMPORTANTE**: es necesario recordar la contraseña previa, para poder recuperar los datos. En caso contrario se debe limpiar la caché (botón **Limpiar**), para forzar a cargar los cursos nuevamente.
