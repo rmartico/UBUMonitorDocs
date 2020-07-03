@@ -20,15 +20,18 @@ General
 -------
 
 * Codificación del fichero: juego de caracteres a utilizar en la exportación de los ficheros ``CSV`` generados.
+* Color de fondo de la gráfica: por defecto está en transparente, pero puede personalizarse.
 * Nota de corte: mínima nota que marca superar o no los items de calificación.
+* Límite nivel Item de calificación: indica el nivel de profundidad en el árbol del calificador al que se muestran los items y categorías de calificación desplegados. A mayor valor, el árbol mostrará los elementos a niveles más profundos desplegados.
 * Ancho de línea
 * Espaciado entre líneas
 * Leyenda del gráfico
 * Estadísticas generales
 * Estadísticas de grupos
-* Roles iniciales: selección de roles que se marcan inicialmente en el filtro por roles.
-* Grupos iniciales: selección de grupos que se marcan inicialmente en el filtro de grupos.
-* Últimas conexiones: selección de última conexión que se marca inicialmente en el filtro.
+* Gráficas disponibles: se pueden seleccionar qué gráficas se visualizan o no. Por defecto están marcadas todas.
+* Roles iniciales: selección de roles que se marcan inicialmente en el filtro por roles. Por defecto se marca el rol alumno.
+* Grupos iniciales: selección de grupos que se marcan inicialmente en el filtro de grupos. Por defecto no están seleccionados.
+* Últimas conexiones: selección de última conexión que se marca inicialmente en el filtro. Por defecto están marcadas todas.
 * Unidad de tiempo predeterminado
 * Título del eje Y
 * Título del eje X
@@ -41,6 +44,19 @@ General
   :align: center
   
   Configuración general
+  
+  
+Total
+-----
+* Modo horizontal: cambia la visualización de las barras a modo horizontal.
+
+.. figure:: images/Configuracion_total.png
+  :width: 600
+  :alt: Total
+  :align: center
+  
+  Total
+
 
 Barras apiladas
 ---------------
@@ -74,18 +90,65 @@ Heatmap
   :align: center
   
   Heatmap
+  
+
+Boxplot de elementos
+--------------------
+
+* Modo horizontal: cambia la visualización del boxpot a modo horizontal.
 
 
-Total
------
-* Modo horizontal: cambia la visualización de las barras a modo horizontal.
-
-.. figure:: images/Configuracion_total.png
+.. figure:: images/Configuracion_boxplot_elemento.png
   :width: 600
-  :alt: Total
+  :alt: Boxplot por tiempos
   :align: center
   
-  Total
+  Boxplot por tiempos
+  
+  
+Violín de elementos
+-------------------
+
+* Modo horizontal: cambia la visualización del violín a modo horizontal.
+
+
+.. figure:: images/Configuracion_violin_elemento.png
+  :width: 600
+  :alt: Violín por tiempos
+  :align: center
+  
+  Violín por tiempos
+  
+
+Boxplot por tiempos
+-------------------
+
+* Modo horizontal: cambia la visualización del boxplot a modo horizontal.
+
+
+.. figure:: images/Configuracion_boxplot_tiempo.png
+  :width: 600
+  :alt: Boxpot por tiempos
+  :align: center
+  
+  Boxplot por tiempos
+  
+
+  
+Violín por tiempos
+------------------
+
+* Modo horizontal: cambia la visualización del violín a modo horizontal.
+
+
+.. figure:: images/Configuracion_violin_tiempo.png
+  :width: 600
+  :alt: Violín por tiempos
+  :align: center
+  
+  Violín por tiempos
+
+
 
 Acumulados
 ----------
@@ -98,6 +161,20 @@ Acumulados
   :align: center
   
   Acumulados
+  
+Sesión
+------
+
+Configura el tiempo máximo en minutos de duración de la sesión web en el servidor Moodle.
+
+
+.. figure:: images/Configuracion_sesion.png
+  :width: 600
+  :alt: Sesion
+  :align: center
+  
+  Sesión
+
 
 Acum. Relativos
 ---------------
@@ -180,3 +257,31 @@ Configura los colores para los distintos intervalos de la barra de progreso.
   :align: center
   
   Finalización Actividad
+  
+  
+Compromiso (Lineal)
+-------------------
+
+* Límite de días: establece el límite superior en días para el abandono.
+* Configura los colores para los gráficos de compromiso lineal.
+
+
+.. figure:: images/Configuracion_compromiso_lineal.png
+  :width: 600
+  :alt: Compromiso (Lineal)
+  :align: center
+  
+  Compromiso lineal
+  
+Compromiso (Logarítmico)
+------------------------
+
+Configura los colores para los gráficos de compromiso logarítmico.
+
+
+.. figure:: images/Configuracion_compromiso_log.png
+  :width: 600
+  :alt: Compromiso (Logarítmico)
+  :align: center
+  
+  Compromiso logarítmico

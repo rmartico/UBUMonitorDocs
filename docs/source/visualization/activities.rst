@@ -17,7 +17,7 @@ En la última columna se muestra el progreso del número de actividades para cad
 
 En la cabecera de cada columna se muestra el número de usuarios que han completado la actividad y el porcentaje sobre el total de usuarios.
 
-Se puede aplicar el filtro por fechas para visualizar solo la finalización de actividades dentro del rango marcado, permitiendo visualizar la instantánea concreta en un momento particular de tiempo. 
+Se puede aplicar el **filtro por fechas** para visualizar solo la finalización de actividades dentro del rango marcado, permitiendo visualizar la **instantánea concreta en un momento particular de tiempo**. 
 
 Se permite la ordenación alfabetica, temporal o numéricamente según sea la columna de nombre, item o porcentaje respectivamente.
 

@@ -53,27 +53,6 @@ La información mostrada en el cuadro de texto es técnica, y aunque no es de in
 Errores habituales
 ------------------
 
-**Sin permisos de profesor**
+Esta nueva versión reduce los mensajes de error habituales en otras versiones, comprobando con antelación los permisos disponibles de usuario. Por lo tanto ya no se mostrarán errores por falta de permisos en el acceso a datos.
 
-
-Un error habitual es que no se tengan permisos de profesor (o profesor no editor) sobre un curso o comunidad en el que sí se está matriculado. En tales casos se mostrará un mensaje como el siguiente:
-
-.. figure:: images/error_sin_permisos_lectura.png
-  :width: 300
-  :alt: Error al cargar una asignatura sin rol de profesor
-  :align: center
-  
-  Error al cargar una asignatura sin rol de profesor
-
-
-**Versión de caché incompatible**
-
-
-Si intentamos cargar una asigntura de la caché, cuyo fichero de datos fue generado con una versión diferente de UBUMonitor, puede producirse un error al ser incompatible con la versión actual. En tales casos, se debe limpiar la cache (botón **Limpiar**) y descargar los datos de nuevo.
-
-.. figure:: images/error_version_cache.png
-  :width: 300
-  :alt: Error al cargar una asignatura de la cache con versión incompatible
-  :align: center
-  
-  Error al cargar una asignatura de la caché con versión incompatible
+Por otro lado, cuando exista **incompatiblidad de las versiones de los cachés de datos**, ya no se muestra un mensaje de error, ni se fuerza al usuario limpiar manualmente la caché. En este caso, se accede a una **nueva caché compatible**. Sin embargo hay que tener en cuenta que **la caché estará inicialmente vacía** forzando al usuario a **recargar nuevamente los datos**.

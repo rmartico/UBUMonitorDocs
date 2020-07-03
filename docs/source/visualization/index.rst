@@ -52,7 +52,7 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 
 * **Cambiar curso**: cierra la ventana actual y vuelve a la ventana de **Selección del curso​**.
 
-* **Actualizar curso**: descarga los registros más recientes y actualiza las calificaciones y la finalización de actividades del curso actual, a través de la red. Esta opción no está disponible en modo offline.
+* **Actualizar curso**: descarga los registros más recientes y actualiza las calificaciones y la finalización de actividades del curso actual, a través de la red. Esta opción no está disponible en modo *offline*.
 
 * **Exportar datos CSV**: exporta los datos del curso actual, en formato ``.csv`` a la carpeta seleccionada. Genera los siguientes 8 ficheros:
 
@@ -64,6 +64,10 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
    * ``logs.csv``: registros completos.
    * ``roles.csv``: roles activos.
    * ``sections.csv``: secciones del curso.
+   
+* **Exportar fotos de los usuarios seleccionados...**: genera un documento con las fotos de los usuarios seleccionados. Se ofrecen dos opciones: incluyendo la fotos (opción *Con fotos de usuarios...*) o bien creando una plantilla con huecos pero con nombres, en la opción *Con foto por defecto...*). Estos documentos se pueden utilizar para controles de asistencia, o control de firmas en la opción con foto por defecto.
+
+* **Exportar dashboard**: genera una hoja de cálculo Excel (**.xlsx solo compatible para versiones de Excel 2013 o superiores**) que incluye hojas con la información general, de registros y calificaciones de los alumnos. La hoja es dinámica, permitiendo la consulta y filtrado de datos, en una forma similar de trabajo (pero no igual) a la que se realiza con UBUMonitor.
 
 * **Cerrar sesión**: cierra la sesión actual y vuelve a la pantalla de inicio de sesión.
 
@@ -75,9 +79,9 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 
 **Ver**
 
-* **Temas**: permite seleccionar distintos temas de visualización cambiando el aspecto visual de la aplicación. Están disponibles tres temas: Modena, Caspian y Bootstrap 3. 
+* **Temas**: permite seleccionar distintos temas de visualización cambiando el aspecto de la aplicación. Están disponibles tres temas: Modena, Caspian y Bootstrap 3. 
 
-**Heramientas**
+**Herramientas**
 
 * **Cambiar configuración**: permite personalizar opciones de funcionamiento y visualización generales y particulares de cada tipo de gráfico generado. Una vez seleccionados los cambios pulsar en el botón de cierre de ventana (los cambios se aplican automáticamente). Si se selecciona el botón **Restaurar valores por defecto** se recuperan los valores iniciales configurados en la aplicación.
 
@@ -102,7 +106,7 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
   
   Estadísticas básicas de la asignatura cargada
   
-  
+* **Manual de usuario**: abre el enlace al manual de usuario correspondiente a la versión utilizada en el navegador por defecto.  
 * **Más información**: abre el proyecto GitHub en la ventana del navegador por defecto.
 * **Acerca de la aplicación**: muestra la información general de la aplicación relativa a versión, autores y agradecimientos.
 
@@ -113,21 +117,21 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
   
   Información acerca de la aplicación
 
-Listado de usuarios matriculados
---------------------------------
+Listado de usuarios matriculados/no matriculados
+------------------------------------------------
 
-En esta vista se muestra el listado de los usuarios matriculados en el curso, junto con su fotografía y el tiempo desde su último acceso al curso actual y a la plataforma de Moodle ya sea en minutos, horas o días. Se toma como referencia la hora del sistema.
+En esta vista se muestra el listado de los usuarios matriculados, junto con su fotografía y el tiempo desde su último acceso al curso actual y a la plataforma de Moodle, ya sea en minutos, horas o días. Se toma como referencia la hora del sistema.
 
 .. figure:: images/lista_usuarios_matriculados.png
   :width: 300
-  :alt: Barra de herramientas
+  :alt: Lista de usuarios matriculados
   :align: center
   
   Lista de usuarios matriculados
   
 Los usuarios se colorean, según su fecha de última conexión al curso, para facilitar la detección de **riesgo de abandono**, utilizando la siguiente codificación:
 
-* *Rojo*: si hace más de 13 días que no se conecta
+* *Rojo*: si hace más de 13 días que no se conecta.
 * *Amarillo*: si se ha conectado entre 7 a 12 días.
 * *Azul*: si se ha conectado hace 3 a 6 días.
 * *Verde*: si se ha conectado en los últimos 2 días.
@@ -140,6 +144,15 @@ También da la opción de aplicar cuatro filtros juntos de forma conjunta, con s
 * **Selector de Última conexión**: franja de último acceso.
 
 En la esquina superior izquierda, se muestra el número de participantes que cumplen los filtros aplicados.
+
+En la segunda pestaña se muestran los usuarios **no matriculados**, de los cuales se han recogido accesos (o logs), pero no están o han dejado de estar matriculados en la asignatura. En este caso, la informacion disponible puede ser mucho más limitada y solo se dispone de información de los registros y sus gráficos asociados. Se deshabilitan las opciones de filtrado de calificaciones y finalización de actividades.
+
+.. figure:: images/lista_usuarios_no_matriculados.png
+  :width: 300
+  :alt: Lista de usuarios no matriculados
+  :align: center
+  
+  Lista de usuarios no matriculados
 
 
 Ficha de alumnos
@@ -163,4 +176,4 @@ Se utilizan círculos de color para indicar la fecha de última conexión a la a
 En la zona derecha, se muestra el listado completo de cursos en los que está matriculado/a. El listado se muestra ordenado por identificador, pero se puede ordenadar alfabéticamente en orden ascendente o descendente, pulsando sobre **Cursos matriculados**.
 
 
-Los botones en la parte inferior con flechas a izquierda y derecha permiten avanzar o retroceder en el listado de alumnos, actualizando los datos.
+Los botones en la parte inferior con flechas a izquierda y derecha permiten avanzar o retroceder en el listado de alumnos, actualizando los datos. Los botones con dobles fechas, permiten ir al último o primer alumno/a en la lista.

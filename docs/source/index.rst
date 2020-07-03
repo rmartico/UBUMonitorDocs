@@ -22,6 +22,7 @@ Manual de usuario para UBUMonitor
    visualization/logs
    visualization/grades  
    visualization/activities
+   droprisk/index
    configuration
    errormessages
    appendix

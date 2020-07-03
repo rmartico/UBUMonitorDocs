@@ -1,9 +1,9 @@
 Selección de curso/asignatura
 =============================
 
-En la parte superior se muestra el usuario, url del host, fecha de inicio de sesión y el modo de trabajo (onlines vs. offline). El botón **Cerrar sesión** permite volver a la ventana de inicio de sesión previa, cerrando la actual.
+En la parte superior se muestra el usuario, url del host, fecha de inicio de sesión y el modo de trabajo (online vs. offline). El botón **Cerrar sesión** permite volver a la ventana de inicio de sesión previa, cerrando la actual.
 
-La zona principal muestra el listado de cursos (o asignaturas) en los que está registrado el usuario actual. Se  permite seleccionar uno de ellos, para realizar la carga de datos y acceder a la siguiente pantalla. Las asignaturas se presentan ordenadas alfabéticamente en pestañas de la siguiente forma:
+La zona principal muestra el listado de cursos (o asignaturas) en los que está registrado el usuario actual. Se  permite seleccionar uno de ellos, para realizar la carga de datos y acceder a la siguiente pantalla. Las asignaturas se presentan ordenadas alfabéticamente en pestañas (a excepción de la pestaña *Recientes*) de la siguiente forma:
 
 * **Recientes**: cursos accedidos recientemente por el usuario.
 * **Destacados**: cursos destacados por el usuario.
@@ -11,6 +11,7 @@ La zona principal muestra el listado de cursos (o asignaturas) en los que está 
 * **En progreso**: en curso actual, con fecha de inicio y fin incluyendo a la fecha actual.
 * **Futuros**: cursos a realizar, con fecha de inicio posterior a la fecha actual.
 * **Pasados**: cursos ya finalizados, con fecha de fin anterior a la fecha actual.
+* **Buscar**: incluye un buscador por texto para encontrar cualquier curso en el servidor Moodle.
 
 *Nota*: es responsabilidad del usuario clasificar las asignaturas como *destacadas* (e incluso *ocultas*) en su *Área personal* de Moodle. Las fechas de inicio y fin de cada curso, se personalizan en *Editar ajustes* de cada asignatura.
 
@@ -23,13 +24,12 @@ La zona principal muestra el listado de cursos (o asignaturas) en los que está 
 
 La primera vez que se selecciona un curso se mostrará en **Última actualización local** el texto **No disponible** y se marca por defecto la opción de **Actualizar datos** para forzar la descarga de datos del servidor. 
 
-Adicionamente se deja la **opción avanzada** de descargar **Solo registros de web** si se quieren descargar solo registros desde el navegador (ignorando registros de tipo cliente, *web service*, *restore* o no clasificados). Por defecto está desmarcada y solo se recomienda su uso por usuarios avanzados.
+Dependiendo de los permisos actuales de nuestro usuario sobre el curso seleccionado y de las opciones activadas en el curso, se muestran en las casillas inferiores las opciones de datos disponibles a actualizar: registros (logs), calificaciones y actividades completadas. Discrecionalmente se pueden marcar o no, para recargar los respectivos datos. Si el usuario no tiene permisos o los datos no están disponibles para su descarga, la casilla simplemente se deshabilita.
+
+Presionamos el botón **Entrar** para iniciar la descarga. Este proceso de descarga de datos puede **tardar varios minutos en la primera descarga** (en función del número de alumnos, tamaño del calificador, número de registros nuevos y de actividades con rastreo de finalización activo). Se dispone de un botón *Cancelar* para interrumpir el proceso de carga.
 
 
-Presionamos el botón **Entrar** para iniciar la descarga. Este proceso de descarga de datos puede **tardar varios minutos en la primera descarga** (en función del número de alumnos, tamaño del calificador, número de registros nuevos y de actividades con rastreo de finalización activo). 
-
-
-Se mostrará en la parte inferior una barra de progreso indicando las etapas realizadas (carga del calificador, descarga de finalización de actividades, descarga del log y parseado de logs). **Posteriores actualizaciones serán más breves**, puesto que la carga de registros es incremental, aunque el calificador y la finalización de actividades siempre se actualiza por completo.
+Se mostrará en la parte inferior una barra de progreso indicando las etapas realizadas (descarga de datos, del calificador, de finalización de actividades,del log y parseado de logs). **Posteriores actualizaciones serán más breves**, puesto que la carga de registros es incremental, aunque el calificador y la finalización de actividades siempre se actualiza por completo.
 
 
 Por otro lado, es **MUY IMPORTANTE** que en el calificador esté visible la información de porcentaje (por defecto está visible en Moodle) para una correcta lectura y visualización posterior de las calificaciones.
@@ -63,16 +63,18 @@ Seleccionando una asignatura previamente cargada, se activará el botón **Limpi
   Limpiar caché
 
 
-Al desaparecer la caché, la asignatura se detecta como no cargada previamente, forzando siempre a utilizar la opción **Actualizar datos** en el siguiente acceso posterior. 
+Al desaparecer la caché, la asignatura se detecta como no cargada previamente, forzando siempre a utilizar la opción **Actualizar datos** en el siguiente acceso posterior.  
 
+Esta opción es útil para eliminar ficheros de asignaturas a las que ya no se va acceder en el futuro.
 
-Esta opción es útil para eliminar ficheros de asignaturas a las que ya no se va acceder en el futuro o cuando la versión instalada de UBUMonitor detecte problemas con la versión de fichero local y sea necesario su borrado (ver Sec. :ref:`errormessages`).
+..
+	Esta opción es útil para eliminar ficheros de asignaturas a las que ya no se va acceder en el futuro o cuando la versión instalada de UBUMonitor detecte problemas con la versión de fichero local y sea necesario su borrado (ver Sec. :ref:`errormessages`).
 
 
 Modo offline
 ------------
 
-Si hemos seleccionado acceso en **Modo offline** solo se mostrarán las asignaturas disponibles en la caché local, en la pestaña *Archivos locales*. En este modo no es posible actualizar datos, pero sí acceder a la funcionalidad completa de visualización de datos.
+Si hemos seleccionado acceso en **Modo offline** solo se mostrarán las asignaturas disponibles en la caché local, en la pestaña *Archivos locales*. En este modo no es posible actualizar datos, pero sí acceder a la funcionalidad completa de análisis visual de datos.
 
 .. figure:: images/Seleccion_de_curso_offline.png
   :width: 400

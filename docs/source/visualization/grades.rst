@@ -113,7 +113,7 @@ Muestra un diagrama de barras apiladas con el porcentaje de los alumnos seleccio
   
   Porcentajes sobre cada item de calificación
 
-La nota de corte se puede cambiar, ver Sec :ref:`configuration` el apartado **General**.
+La nota de corte se puede cambiar, ver Sec :ref:`configuration`, en el apartado **General**.
 
 
 

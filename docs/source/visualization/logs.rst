@@ -26,11 +26,11 @@ Al pulsar la pestaña de **Registros**, en la esquina inferior izquierda, aparec
 * **Fecha de referencia inicial**: la fecha de inicio orientativo que se muestra al agrupar. Inicialmente toma el valor de la configuración de la asignatura en Moodle.
 * **Fecha de referencia final**:  fecha límite orientativa que se muestra al agrupar. Inicialmente se toma como fecha fin el mínimo de la fecha actual y la fecha de fin de curso si existe.
 
-Hay que tener en cuenta que la fecha de referencia incial y final no toman todos los datos al realizar las agrupaciones. Por ejemplo al agrupar por meses y una fecha inicial del 17/06/2019 a 24/06/2019 no mostrará los registros entre esos dos días, si no que mostrara todas las de junio.
+Hay que tener en cuenta que la fecha de referencia incial y final no toman todos los datos al realizar las agrupaciones. Por ejemplo al agrupar por meses y una fecha inicial del 17/06/2019 a 24/06/2019 no mostrará los registros entre esos dos días, si no que mostrará todas las de junio.
 
 En las agrupaciones por **Horas** y **Días de la semana** no usan el selector de fechas, calculándose sobre el total de registros, por lo tanto se deshabilitan.
 
-En los gráficos al hacer click sobre los puntos o elementos de un alumno concreto, se posiciona a su vez en la vista en el usuario correspondiente, para facilitar su identificación. Se dispone de la ficha del alumno/a para poder consultar información adicional.
+En algunos gráficos al hacer click sobre los puntos o elementos de un alumno concreto, se posiciona a su vez en la vista en el usuario correspondiente, para facilitar su identificación. Se dispone de la ficha del alumno/a para poder consultar información adicional.
 
 En la zona izquierda inferior se muestran las posibles pestañas de selección de elementos sobre los que generar las gráficas: **Componentes**, **Eventos**, **Secciones** o **Módulos de curso**. Se permite selección múltiple sobre todos ellas y el filtrado por texto.
 
@@ -73,7 +73,9 @@ Muestra la estructura de secciones en la que se encuentra organizado el curso, e
 Módulos de curso
 ----------------
 
-Muestra el conjunto completo de módulos de curso, incluyendo todos los recursos y actividades que se han creado. Se muestran ordenados tal y como se encuentran en la asignatura. Inicialmente se muestran solo los módulos visibles pero seleccionando **Con ocultos**, se muestran todos. También es posible filtrar solo aquellos módulos que tienen activo el rastreo de finalización, marcando la casilla **Act.Complet**. Se permite el filtrado con selección múltiple, según el tipo de módulo.
+Muestra el conjunto completo de módulos de curso, incluyendo todos los recursos y actividades que se han creado. Se muestran ordenados tal y como se encuentran en la asignatura. Inicialmente se muestran solo los módulos visibles pero seleccionando **Con ocultos**, se muestran todos. También es posible filtrar solo aquellos módulos que tienen activo el rastreo de finalización, marcando la casilla **Act.Complet**. 
+
+Se permite también el filtrado con selección múltiple, según el tipo de componente y por la sección en la que se encuentran los módulos.
 
 .. figure:: images/ListaModulos.png
   :width: 300
@@ -81,6 +83,21 @@ Muestra el conjunto completo de módulos de curso, incluyendo todos los recursos
   :align: center
   
   Lista de módulos
+  
+  
+Gráfico de totales
+------------------
+
+Muestra el total de número de registros de los usuarios filtrados en un periodo de tiempo sobre lo elementos seleccionados. Permite la comparación de accesos entre elementos de forma directa. 
+
+.. figure:: images/Total.png
+  :width: 600
+  :alt: Grafico de totales
+  :align: center
+  
+  Gráfico de totales
+  
+Si seleccionamos grupos, se muestran sus totales, teniendo en cuenta el filtro por rol. Adicionalmente se pueden seleccionar usuarios sobre la lista de filtrados, para visualizar los totales sobre dicho grupo ficticio.
 
 Gráfico de barras apiladas
 --------------------------
@@ -121,6 +138,67 @@ Si presionamos en el gráfico sobre la leyenda superior en un intervalo, por eje
   
 Si se ajusta el valor máximo en **Cambiar escala máxima sugerida:** se recalcula y ajusta la paleta de colores.
 
+
+Gráfico de boxplot de elementos
+-------------------------------
+
+Muestra los boxplots de accesos de los usuarios y elementos seleccionados (componentes, eventos, secciones o módulos). Los *outliers* o valores extremos se representan con un punto de mayor grosor.
+
+.. figure:: images/boxplot_elementos.png
+  :width: 600
+  :alt: Boxplot de elementos
+  :align: center
+  
+  Boxplot de elementos
+  
+Si seleccionamos grupos, se muestran adicionalmente sus boxplots asociados.
+
+
+Gráfico de violín de elementos
+------------------------------
+
+Muestra los gráficos de violín de accesos de los usuarios y elementos seleccionados (componentes, eventos, secciones o módulos). 
+
+.. figure:: images/violin_elementos.png
+  :width: 600
+  :alt: Violín de elementos
+  :align: center
+  
+  Violín de elementos
+  
+Si seleccionamos grupos, se muestran adicionalmente sus violines asociados.
+
+
+Gráfico de boxplot por tiempos
+------------------------------
+
+Muestra los boxplots de accesos de los usurios y elementos seleccionados (componentes, eventos, secciones o módulos) distribuidos por tiempos según la dimensión escogida (días, semanas, meses, etc.). Los *outliers* o valores extremos se representan con un punto de mayor grosor.
+
+.. figure:: images/boxplot_tiempo.png
+  :width: 600
+  :alt: Boxplot por tiempos
+  :align: center
+  
+  Boxplot por tiempos
+  
+Si seleccionamos grupos, se muestran adicionalmente sus boxplots asociados.
+
+
+Gráfico de violín por tiempos
+-----------------------------
+
+Muestra los gráficos de violín de accesos de los usuarios y elementos seleccionados (componentes, eventos, secciones o módulos) distribuidos por tiempos según la dimensión escogida (días, semanas, meses, etc.). 
+
+.. figure:: images/violin_tiempo.png
+  :width: 600
+  :alt: Violín por tiempos
+  :align: center
+  
+  Violín por tiempos
+  
+Si seleccionamos grupos, se muestran adicionalmente sus violines asociados.
+
+
 Gráfico de registros acumulados
 -------------------------------
 
@@ -157,17 +235,46 @@ Muestra la distribución temporal de los registros a lo largo del tiempo de cada
   :align: center
   
   Gráfico de dispersion
+  
+Gráfico de dispersión de usuarios
+---------------------------------
 
-Gráfico de totales
-------------------
+Muestra la distribución temporal de los registros a lo largo del tiempo para el elemento con los usuarios seleccionados. Representa la distribución temporal de los distintos accesos a cada elemento a simple golpe de vista, facilitando su comparación.
 
-Muestra el total de número de registros de los usuarios filtrados en un periodo de tiempo sobre lo elementos seleccionados. Permite la comparación de accesos entre elementos de forma directa. 
-
-.. figure:: images/Total.png
+.. figure:: images/Dispersion_usuarios.png
   :width: 600
-  :alt: Grafico de totales
+  :alt: Grafico de dispersion de usuarios
   :align: center
   
-  Gráfico de totales
+  Gráfico de dispersión de usuarios
   
-Si seleccionamos grupos, se muestran sus totales, teniendo en cuenta el filtro por rol. Adicionalmente se pueden seleccionar usuarios sobre la lista de filtrados, para visualizar los totales sobre dicho grupo ficticio.
+Tabla de logs
+-------------
+
+Muestra la tabla desglosada con la información detallada de los registros seleccionados. La tabla permite la ordenación y filtrado de los datos en las opciones de la parte superior de la tabla.
+
+.. figure:: images/tabla_logs.png
+  :width: 600
+  :alt: Tabla de logs
+  :align: center
+  
+  Tabla de logs
+  
+  
+Sesión
+------
+
+Muestra un gráfico de barras apiladas desglosada por usuario, con una **estimación** del tiempo pasado en la selección de elementos actuales, en función de la información de los registros y del tiempo máximo de expiración de sesión del servidor. En el *tooltip* informativo se muestra el número de sesiones iniciadas.
+
+.. figure:: images/sesion.png
+  :width: 600
+  :alt: Sesión
+  :align: center
+  
+  Sesión
+  
+El valor por defecto de duración de la sesión está establecido a 60 minutos, pero puede modificarse en la configuración de la aplicación. Para ello, ver Sec :ref:`configuration`, en el apartado **Sesión**.
+
+Se debe tener en cuenta que los valores son estimados, considerando una nueva sesión cuando ha transcurrido más del tiempo límite de sesión entre dos registros sucesivos. En caso contrario, se considera que son eventos de la misma sesión y se acumulan los tiempos.
+  
+

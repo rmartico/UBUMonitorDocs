@@ -1,7 +1,7 @@
 Inicio de sesión
 ================
 
-Una vez arrancada la aplicación se mostrará la pantalla de inicio de sesión. La ventana muestra en la parte superior la versión actual del producto y permite seleccionar el idioma de preferencia para la aplicación. 
+Una vez arrancada la aplicación se mostrará la pantalla de inicio de sesión. La ventana muestra en la parte superior la versión actual del producto. La información de la aplicación a la izquierda (*Acerca de la aplicación+) y a la derecha permite seleccionar el idioma de preferencia y ajustar la configuración de la aplicación del lanzador. 
 
 .. figure:: images/Login.png
   :width: 400
@@ -17,16 +17,16 @@ A continuación se deben introducir las credenciales de **Usuario** y **Contrase
 Modo conectado
 --------------
 
-En el campo **Host** se debe indicar la URL de la página web de la plataforma Moodle elegida. A la hora de introducir el host, se debe incluir su URL, incluyendo el protocolo de acceso. 
+En el campo **Host** se debe indicar la URL de la página web de la plataforma Moodle elegida. A la hora de introducir el host, se debe incluir su URL. El protocolo de acceso es opcional, ya que si no se incluye la aplicación **autocompleta** y prueba a conectar con https:// y http:// (en ese orden). 
 
 Por ejemplo:
 
-* para acceder al servidor de pruebas Mount Orange School se pondrá literalmente: ``https://school.moodledemo.net``
-* para acceder al servidor Moodle de la UBU (UBUVirtual) se pondrá literalmente: ``https://ubuvirtual.ubu.es``
+* para acceder al servidor de pruebas Mount Orange School se pondrá literalmente: ``https://school.moodledemo.net`` o bien  ``school.moodledemo.net``.
+* para acceder al servidor Moodle de la UBU (UBUVirtual) se pondrá literalmente: ``https://ubuvirtual.ubu.es`` o bien ``ubuvirtual.ubu.es``.
 
-Se recomienda siempre acceder a servidores seguros (con https://) para garantizar que el envío de información va encriptado.
+Se recomienda siempre acceder a servidores seguros (con https://) para garantizar que el envío de información vaya encriptado.
 
-Sin embargo, UBUMonitor permite acceder a cualquier servidor Moodle que valide usuarios de la forma login/password. Si el servidor al que se accede NO es seguro y no encripta la comunicación (con ``http://`` en lugar de ``https://``), se muestra con un icono y *tooltip* adicional el aviso al usuario. Se recomienda utilizar esta opción con prudencia y **solo en accesos a un servidor local de confianza**.
+Sin embargo, UBUMonitor permite acceder a cualquier servidor Moodle que valide usuarios de la forma login/password. Si el servidor al que se accede NO es seguro y no encripta la comunicación (con http:// en lugar de https://), se muestra con un icono y *tooltip* adicional el aviso al usuario. Se recomienda utilizar esta opción con prudencia y **solo en accesos a un servidor local de confianza**.
 
 .. figure:: images/Login_no_seguro.png
   :width: 400
@@ -45,7 +45,7 @@ La aplicación **recuerda** las *urls* de los servidores que se han utilizado **
   Surgerencia de hosts usados previamente
 
 
-Por comodidad, se da la opción de **Recordar usuario** y **Recordar host**, evitando tener que volver a rellenar los campos en siguientes accesos. Esa información se guarda en un fichero ``config.properties`` en el directorio actual, si marcamos una o ambas opciones. El botón **Borrar** permite eliminar el texto de los tres campos.
+Por comodidad, se da la opción de **Recordar usuario** y **Recordar host**, evitando tener que volver a rellenar los campos en siguientes accesos. Esa información se guarda en un fichero ``configuration.json`` en el directorio actual, si marcamos una o ambas opciones. El botón **Borrar** permite eliminar el texto de los tres campos.
 
 Después de introducir las credenciales pulsamos el botón de **Entrar**. Si los datos son válidos cargará la siguiente pantalla, y si no, mostrará un mensaje de error en la zona inferior de la ventana. 
 
