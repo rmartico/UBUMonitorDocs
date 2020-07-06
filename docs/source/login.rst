@@ -1,7 +1,7 @@
 Inicio de sesión
 ================
 
-Una vez arrancada la aplicación se mostrará la pantalla de inicio de sesión. La ventana muestra en la parte superior la versión actual del producto. La información de la aplicación a la izquierda (*Acerca de la aplicación+) y a la derecha permite seleccionar el idioma de preferencia y ajustar la configuración de la aplicación del lanzador. 
+Una vez arrancada la aplicación se mostrará la pantalla de inicio de sesión. La ventana muestra en la parte superior la versión actual del producto. La información de la aplicación a la izquierda (*Acerca de la aplicación*) y a la derecha permite seleccionar el idioma de preferencia y ajustar la configuración de la aplicación del lanzador. 
 
 .. figure:: images/Login.png
   :width: 400

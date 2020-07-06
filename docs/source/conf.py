@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'UBUMonitor'
-copyright = '2020, Yi Peng Ji & Raúl Marticorena'
-author = 'Yi Peng Ji & Raúl Marticorena'
+copyright = '2020, Yi Peng Ji & Xing Long Ji & Raúl Marticorena'
+author = 'Yi Peng Ji & Xing Long Ji & Raúl Marticorena'
 
 # The full version, including alpha/beta/rc tags
-release = '2.5.0'
+release = '2.7.0'
 
 
 # -- General configuration ---------------------------------------------------

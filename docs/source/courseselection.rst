@@ -74,7 +74,7 @@ Esta opción es útil para eliminar ficheros de asignaturas a las que ya no se v
 Modo offline
 ------------
 
-Si hemos seleccionado acceso en **Modo offline** solo se mostrarán las asignaturas disponibles en la caché local, en la pestaña *Archivos locales*. En este modo no es posible actualizar datos, pero sí acceder a la funcionalidad completa de análisis visual de datos.
+Si hemos seleccionado acceso en **Modo offline** solo se mostrarán las asignaturas actualmente disponibles en la caché local, en la pestaña *Archivos locales*, junto con los cursos previamente archivados, en la pestaña *Cursos previos* (ver archivado de cursos en Sec. :ref:`mainwindow`). En este modo no es posible actualizar datos, pero sí acceder a la funcionalidad completa de análisis visual de datos.
 
 .. figure:: images/Seleccion_de_curso_offline.png
   :width: 400

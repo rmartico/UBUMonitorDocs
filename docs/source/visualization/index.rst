@@ -1,3 +1,5 @@
+.. _mainwindow:
+
 Pantalla principal
 ==================
 
@@ -54,10 +56,12 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 
 * **Actualizar curso**: descarga los registros más recientes y actualiza las calificaciones y la finalización de actividades del curso actual, a través de la red. Esta opción no está disponible en modo *offline*.
 
-* **Exportar datos CSV**: exporta los datos del curso actual, en formato ``.csv`` a la carpeta seleccionada. Genera los siguientes 8 ficheros:
+* **Exportar datos CSV**: exporta los datos del curso actual, en formato ``.csv`` a la carpeta seleccionada. Genera los siguientes 10 ficheros:
 
+   * ``course_events.csv``: eventos de calendario del curso.
    * ``course_modules.csv``: contiene los módulos de curso.
    * ``courses.csv``: información de los cursos en los que están matriculados los alumnos matriculados.
+   * ``discussions_posts.csv``: mensajes de los foros de discusión.
    * ``enrolled_users.csv``: alumnos matriculdos.
    * ``grades.csv``: calificaciones.
    * ``groups.csv``: grupos.
@@ -69,6 +73,8 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 
 * **Exportar dashboard**: genera una hoja de cálculo Excel (**.xlsx solo compatible para versiones de Excel 2013 o superiores**) que incluye hojas con la información general, de registros y calificaciones de los alumnos. La hoja es dinámica, permitiendo la consulta y filtrado de datos, en una forma similar de trabajo (pero no igual) a la que se realiza con UBUMonitor.
 
+* **Archivar curso**: permite realizar una copia de seguridad en la caché local para su posterior acceso en modo desconectado u *offline*. Útil cuando al principio de curso se borran los datos de cursos anteriores y no se quiere perder dichos datos.
+
 * **Cerrar sesión**: cierra la sesión actual y vuelve a la pantalla de inicio de sesión.
 
 * **Salir**: cierra la aplicación.
@@ -77,23 +83,25 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 
 * **Borrar selección**: elimina la selección actual de todas las vistas disponibles.
 
+* **Importar registros**: permite sustituir los registros actuales por los datos de un fichero de log exportado en Moodle. Es requisito imprescindible que el fichero se haya exportado en inglés para una correcta importación.
+
 **Ver**
 
 * **Temas**: permite seleccionar distintos temas de visualización cambiando el aspecto de la aplicación. Están disponibles tres temas: Modena, Caspian y Bootstrap 3. 
 
 **Herramientas**
 
-* **Cambiar configuración**: permite personalizar opciones de funcionamiento y visualización generales y particulares de cada tipo de gráfico generado. Una vez seleccionados los cambios pulsar en el botón de cierre de ventana (los cambios se aplican automáticamente). Si se selecciona el botón **Restaurar valores por defecto** se recuperan los valores iniciales configurados en la aplicación.
+* **Cambiar configuración**: permite personalizar opciones de funcionamiento y visualización generales y particulares de cada tipo de gráfico generado para el curso actual. Una vez seleccionados los cambios pulsar en el botón **Aplicar** para guardar dichos cambios (los cambios se aplican automáticamente). Si se selecciona el botón **Restaurar valores por defecto** se recuperan los valores iniciales configurados en la aplicación. Las configuraciones son particulares de cada curso. 
 
 .. figure:: images/Configuracion.png
   :width: 400
-  :alt: Configuracion
+  :alt: Configuración del curso
   :align: center
   
-  Configuración la aplicación
+  Configuración del curso
   
-* **Importar configuración**: permite importar una configuración previamente almacenada por el usuario para una asignatura.
-* **Exportar configuración**: exporta las opciones actuales configuradas en la asignatura por el usuario.
+* **Importar configuración**: permite importar una configuración previamente almacenada por el usuario para una asignatura o curso.
+* **Exportar configuración**: exporta las opciones actuales configuradas en la asignatura o curso por el usuario de la aplicación.
 
 **Ayuda**
 
@@ -107,8 +115,12 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
   Estadísticas básicas de la asignatura cargada
   
 * **Manual de usuario**: abre el enlace al manual de usuario correspondiente a la versión utilizada en el navegador por defecto.  
-* **Más información**: abre el proyecto GitHub en la ventana del navegador por defecto.
-* **Acerca de la aplicación**: muestra la información general de la aplicación relativa a versión, autores y agradecimientos.
+
+* **Repositorio en GitHub**: enlaza con el repositorio GitHub del proyecto UBUMonitor, en la ventana del navegador por defecto.
+
+* **Más información**: abre la página comercial o *landing page* de UBUMonitor.
+
+* **Acerca de la aplicación**: muestra la información general de la aplicación relativa a versión, autores y agradecimientos y licencia.
 
 .. figure:: images/Acerca_de.png
   :width: 400
