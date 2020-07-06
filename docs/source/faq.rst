@@ -35,4 +35,4 @@ Sí siempre y cuando se utilice una versión portable, o bien se tenga instalado
 
 **La aplicación funciona, pero no escala y redimensiona  correctamente los gráficos ¿por qué?**
 
-Se debe comprobar que se está ejecutando la aplicación con una **versión Java 8 que incluya las bibliotecas JavaFX**. Para comprobar la versión actual, se puede abrir unaE consola del sistema operativo y ejecutar $> java -version. Se mostrará el número actual de versión instalada. Con versiones superiores (e.g. Java 11 o superior) se ha detectado que la visualización de gráficos no es correcta. Recordemos que las versiones libres (e.g. OpenJDK) tampoco funcionarán al no incluir JavaFX.
+Se debe comprobar que se está ejecutando la aplicación con una **versión Java 8 que incluya las bibliotecas JavaFX**. Para comprobar la versión actual, se puede abrir una consola del sistema operativo y ejecutar $> java -version. Se mostrará el número actual de versión instalada. Con versiones superiores (e.g. Java 11 o superior) se ha detectado que la visualización de gráficos no es correcta. Recordemos que las versiones libres (e.g. OpenJDK) tampoco funcionarán al no incluir JavaFX.
