@@ -39,7 +39,7 @@ En los gráficos y tablas generados en la zona central, se habilita siempre un m
 **Nota**: muchas capturas de pantallas de este manual se han realizado contra los datos del servidor gratuito **Mount Orange School** disponible en https://school.moodledemo.net. Nuestro agradecimiento y reconocimiento al grupo de desarrollo de Moodle que nos ha dado su visto bueno.
   
 Barra de menú 
----------------------
+-------------
 
 En la parte superior de la ventana muestra una barra de menú con diferentes opciones. Se habilita el acceso rápido con atajos de teclado presionando la tecla ALT:
 
