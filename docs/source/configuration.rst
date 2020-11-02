@@ -3,7 +3,7 @@
 Configuración de la aplicación
 ==============================
 
-En el menú **Herramientas**, se dispone de la opción avanzada **Cambiar configuración**. Esta opción permite personalizar los valores por defecto iniciales en algunas visualizaciones para la asignatura actual (cada asignatura puede tener su propia configuración).
+En el menú **Herramientas**, se dispone de la opción avanzada **Cambiar configuración**. Esta opción permite personalizar los valores por defecto iniciales en algunas visualizaciones para la asignatura o curso actual (cada asignatura puede tener su propia configuración).
 
 .. figure:: images/Configuracion_general_sin_abrir.png
   :width: 600
@@ -12,9 +12,9 @@ En el menú **Herramientas**, se dispone de la opción avanzada **Cambiar config
   
   Configuración
 
-El diálogo modal de configuración habilita la búsqueda por texto. Los cambios se guardan al cerrar el diálogo. Si se quieren recupera los valores iniciales, se debe seleccionar el botón **Restaurar valores por defecto**.
+El diálogo modal de configuración habilita la búsqueda por texto. Los cambios se guardan al presionar el botón *Aplicar*. Si se quieren recupera los valores iniciales, se debe seleccionar el botón **Restaurar valores por defecto**.
 
-El dialógo muestra las siguientes secciones:
+El dialógo muestra las siguientes secciones organizadas por pestañas:
 
 General
 -------
@@ -46,8 +46,8 @@ General
   Configuración general
   
   
-Total
------
+Total (Pestaña Análisis visual - Registros)
+-------------------------------------------
 * Modo horizontal: cambia la visualización de las barras a modo horizontal.
 
 .. figure:: images/Configuracion_total.png
@@ -58,8 +58,8 @@ Total
   Total
 
 
-Barras apiladas
----------------
+Barras apiladas (Pestaña Análisis visual - Registros)
+-----------------------------------------------------
 
 * Calcular máximo: activa el cálculo automático.
 
@@ -72,8 +72,8 @@ Barras apiladas
 
 
 
-Heatmap
--------
+Heatmap (Pestaña Análisis visual - Registros)
+---------------------------------------------
 
 * Calcular máximo: activa el cálculo automático.
 * Con cuartiles: calcula los rangos a partir de los cuartiles de la muestra actual, en lugar de dividir el rango en cuatro partes iguales.
@@ -92,8 +92,8 @@ Heatmap
   Heatmap
   
 
-Boxplot de elementos
---------------------
+Boxplot de elementos (Pestaña Análisis visual - Registros)
+----------------------------------------------------------
 
 * Modo horizontal: cambia la visualización del boxpot a modo horizontal.
 
@@ -106,8 +106,8 @@ Boxplot de elementos
   Boxplot por tiempos
   
   
-Violín de elementos
--------------------
+Violín de elementos (Pestaña Análisis visual - Registros)
+---------------------------------------------------------
 
 * Modo horizontal: cambia la visualización del violín a modo horizontal.
 
@@ -120,8 +120,8 @@ Violín de elementos
   Violín por tiempos
   
 
-Boxplot por tiempos
--------------------
+Boxplot por tiempos (Pestaña Análisis visual - Registros)
+---------------------------------------------------------
 
 * Modo horizontal: cambia la visualización del boxplot a modo horizontal.
 
@@ -135,8 +135,8 @@ Boxplot por tiempos
   
 
   
-Violín por tiempos
-------------------
+Violín por tiempos (Pestaña Análisis visual - Registros)
+--------------------------------------------------------
 
 * Modo horizontal: cambia la visualización del violín a modo horizontal.
 
@@ -150,8 +150,8 @@ Violín por tiempos
 
 
 
-Acumulados
-----------
+Acumulados (Pestaña Análisis visual - Registros)
+------------------------------------------------
 
 * Calcular máximo: activa el cálculo automático.
 
@@ -162,22 +162,9 @@ Acumulados
   
   Acumulados
   
-Sesión
-------
 
-Configura el tiempo máximo en minutos de duración de la sesión web en el servidor Moodle.
-
-
-.. figure:: images/Configuracion_sesion.png
-  :width: 600
-  :alt: Sesion
-  :align: center
-  
-  Sesión
-
-
-Acum. Relativos
----------------
+Acum. Relativos (Pestaña Análisis visual - Registros)
+-----------------------------------------------------
 
 * Calcular máximo: activa el cálculo automático.
 * Color de línea cero: color aplicado a la línea que representa la media
@@ -189,9 +176,24 @@ Acum. Relativos
   :align: center
   
   Acumulados relativos
+  
+  
+Sesión (Pestaña Análisis visual - Registros)
+--------------------------------------------
 
-Boxplot
--------
+Configura el tiempo máximo en minutos de duración de la sesión web en el servidor Moodle.
+
+
+.. figure:: images/Configuracion_sesion.png
+  :width: 600
+  :alt: Sesion
+  :align: center
+  
+  Sesión
+  
+
+Boxplot (Pestaña Análisis visual - Calificaciones)
+--------------------------------------------------
 
 * Modo horizontal: cambia la visualización de los boxplot a modo horizontal.
 * Información de decimales: número de decimales a mostrar en los *tooltips* con los datos estadísticos.
@@ -204,8 +206,8 @@ Boxplot
   
   Boxplot
 
-Violín
-------
+Violín (Pestaña Análisis visual - Calificaciones)
+-------------------------------------------------
 
 * Modo horizontal: cambia la visualización de los violines a modo horizontal.
 * Información de decimales: número de decimales a mostrar en los *tooltips* con los datos estadísticos.
@@ -217,8 +219,8 @@ Violín
   
   Violín
 
-Calificaciones
---------------
+Calificaciones (Pestaña Análisis visual - Calificaciones)
+---------------------------------------------------------
 
 * Color de calificación suspensa: teniendo en cuenta la nota de corte configurada en la sección General.
 * Color de calificación aprobada: teniendo en cuenta la nota de corte configurada en la sección General.
@@ -231,9 +233,10 @@ Calificaciones
   
   Calificaciones
 
-Calificaciones %
-----------------
+Calificaciones % (Pestaña Análisis visual - Calificaciones)
+-----------------------------------------------------------
 
+* Modo horizontal: cambia la visualización a modo horizontal.
 * Color de calificación vacía
 * Color de calificación suspensa: teniendo en cuenta la nota de corte configurada en la sección General.
 * Color de calificación aprobada: teniendo en cuenta la nota de corte configurada en la sección General.
@@ -245,8 +248,8 @@ Calificaciones %
   
   Porcentaje de calificaciones
 
-Finalización Actividad
-----------------------
+Finalización Actividad (Pestaña Análisis visual - Actividades finalizadas)
+--------------------------------------------------------------------------
 
 Configura los colores para los distintos intervalos de la barra de progreso.
 
@@ -259,8 +262,8 @@ Configura los colores para los distintos intervalos de la barra de progreso.
   Finalización Actividad
   
   
-Compromiso (Lineal)
--------------------
+Compromiso (Lineal) (Pestaña Riesgo de abandono)
+------------------------------------------------
 
 * Límite de días: establece el límite superior en días para el abandono.
 * Configura los colores para los gráficos de compromiso lineal.
@@ -273,8 +276,8 @@ Compromiso (Lineal)
   
   Compromiso lineal
   
-Compromiso (Logarítmico)
-------------------------
+Compromiso (Logarítmico) (Pestaña Riesgo de abandono)
+-----------------------------------------------------
 
 Configura los colores para los gráficos de compromiso logarítmico.
 
@@ -285,3 +288,88 @@ Configura los colores para los gráficos de compromiso logarítmico.
   :align: center
   
   Compromiso logarítmico
+  
+Barras (Pestaña Foros)
+-----------------------
+
+* Modo horizontal: cambia la visualización a modo horizontal.
+* Foros: color de las barras utilizadas.
+
+.. figure:: images/Configuracion_foros_barras.png
+  :width: 600
+  :alt: Barras
+  :align: center
+  
+  Barras
+
+Mensajes de usuario (Pestaña Foros)
+-----------------------------------
+
+* Debates creados: color de las barras utilizadas para los debates.
+* Mensajes de réplicas: color de las barras utilizadas para las réplicas.
+* Modo horizontal: cambia la visualización a modo horizontal.
+
+.. figure:: images/Configuracion_foros_mensajes_de_usuario.png
+  :width: 600
+  :alt: Mensajes de usuario
+  :align: center
+  
+  Mensajes de usuario
+
+Grafo (Pestaña Foros)
+---------------------
+
+* Mostrar nodos sin aristas: oculta la visualizacion de nodos que no tengan aristas entrantes o salientes.
+* Usar fotos: oculta la visualización de fotos en los nodos.
+* Usar iniciales de nombres: oculta la visualización de las iniciales de apellidos y nombre en el nodo.
+* Mostrar número de mensajes:
+
+El resto de opciones son relativas a la física de desplazamiento de nodos, dibujado de aristas y colocación de nodos en pantalla. 
+
+.. figure:: images/Configuracion_foros_grafo.png
+  :width: 600
+  :alt: Grafo
+  :align: center
+  
+  Grafo
+
+Árbol (Pestaña Foros)
+---------------------
+
+* Usar fotos: oculta la visualización de fotos en los nodos.
+* Color de nodos filtrados: color de nodos seleccionados que participan.
+* Color de nodos no filtrados: color de nodos no seleccionados pero que participan en la conversación.
+* Nodos -> Ancho borde: ancho de borde.
+* Aristas -> Borde: grosor de borde.
+* Interacción -> Teclado: permitir interacción con teclado.
+* Interacción -> Multiselección: permitir la selección con la teclar CTRL.
+* Interacción -> Botones de navegación: ocultar botones de navegación.
+* Interacción -> Retardo tootip: número de milisegundos en el retardo en mostrar el tooltip.
+
+.. figure:: images/Configuracion_foros_arbol.png
+  :width: 600
+  :alt: Árbol de conversacion
+  :align: center
+  
+  Árbol de conversación
+
+Nube de palabras (Pestaña Foros)
+--------------------------------
+
+* Idioma de palabras vacías: selección del idioma para la lista de palabras vacías.
+* Color de fondo de la gráfica: color de fondo de la gráfica, por defecto en transparente.
+* Palabras más repetidas: número de palabras más repetidas a incluir.
+* Relleno: espacio entre palabras.
+* Longitud mínima de la palabra: longitud mínima de las palabras a incluir en la nube.
+* Longitud máxima de la palabra: longitud máxima de las palabras a incluir en la nube.
+* Tamaño de fuente mínima: tamaño mínimo de fuente.
+* Tamaño de fuente máxima: tamaño máximo de fuente.
+* Imagen de fondo: imagen de fondo como plantilla para rellenar con las palabras.
+
+.. figure:: images/Configuracion_foros_nube_de_palabras.png
+  :width: 600
+  :alt: Nube de palabras
+  :align: center
+  
+  Nube de palabras
+

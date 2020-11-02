@@ -23,6 +23,9 @@ Manual de usuario para UBUMonitor
    visualization/grades  
    visualization/activities
    droprisk/index
+   forums/index
+   calendar/index
+   clustering/index
    configuration
    errormessages
    appendix
