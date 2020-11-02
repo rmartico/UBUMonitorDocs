@@ -1,13 +1,7 @@
 Instalación y arranque
 ======================
 
-<<<<<<< HEAD
-Desde la versión 2.6.5 de UBUMonitor, se distribuye un **instalador** que descarga la última versión disponible de UBUMonitor. En siguientes ejecuciones comprobará si existen nuevas versiones disponibles, y en caso de existir, consultará al usuario si quiere actualizar la aplicación. Se puede consultar el vídeo de instalación en: https://www.youtube.com/watch?v=hEX1UJBEFlY
-
-=======
 Desde la versión 2.6.5 de UBUMonitor, se distribuye un **instalador** que descarga la última versión disponible de UBUMonitor. En siguientes ejecuciones comprobará si existen nuevas versiones disponibles, y en caso de existir, consultará al usuario si quiere actualizar la aplicación. Se puede consultar el vídeo de instalación en `YouTube <https://www.youtube.com/watch?v=hEX1UJBEFlY>`_.
->>>>>>> 2.7.0
-
 
 Para descargar el instalador acceder a siguiente `enlace <https://github.com/yjx0003/UBUMonitorLauncher/releases/latest>`_.
 
