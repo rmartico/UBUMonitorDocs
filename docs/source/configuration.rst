@@ -191,12 +191,27 @@ Configura el tiempo máximo en minutos de duración de la sesión web en el serv
   
   Sesión
   
+  
+Radar (Pestaña Análisis visual - Calificaciones)
+--------------------------------------------------
+
+* Color nota de corte: color asignado para visualizar la curva de nota de corte.
+
+
+.. figure:: images/Configuracion_radar.png
+  :width: 600
+  :alt: Radar
+  :align: center
+  
+  Radar
+  
 
 Boxplot (Pestaña Análisis visual - Calificaciones)
 --------------------------------------------------
 
 * Modo horizontal: cambia la visualización de los boxplot a modo horizontal.
-* Información de decimales: número de decimales a mostrar en los *tooltips* con los datos estadísticos.
+* Desviación típica: muestra visualmente la desviación típica.
+* Muesca: muestra visualmente la muesca.
 
 
 .. figure:: images/Configuracion_boxplot.png
@@ -210,7 +225,7 @@ Violín (Pestaña Análisis visual - Calificaciones)
 -------------------------------------------------
 
 * Modo horizontal: cambia la visualización de los violines a modo horizontal.
-* Información de decimales: número de decimales a mostrar en los *tooltips* con los datos estadísticos.
+* Box visible: muestra la caja de boxplot dentro del violín.
 
 .. figure:: images/Configuracion_violin.png
   :width: 600
@@ -222,8 +237,7 @@ Violín (Pestaña Análisis visual - Calificaciones)
 Calificaciones (Pestaña Análisis visual - Calificaciones)
 ---------------------------------------------------------
 
-* Color de calificación suspensa: teniendo en cuenta la nota de corte configurada en la sección General.
-* Color de calificación aprobada: teniendo en cuenta la nota de corte configurada en la sección General.
+Permite personalizar los colores en franjas de 1 unidad sobre una escala de 10 puntos.
 
 
 .. figure:: images/Configuracion_calificaciones.png
@@ -247,6 +261,27 @@ Calificaciones % (Pestaña Análisis visual - Calificaciones)
   :align: center
   
   Porcentaje de calificaciones
+  
+  
+Flujo por cohorte (Pestaña Análisis visual - Calificaciones)
+------------------------------------------------------------
+
+* Más información de probabilidades: añade información de probabililidades.
+* Grupos: permite seleccionar aquellos grupos de los que se quiere tener en cuenta su información.
+* Mes de inicio: mes de inicio de matriculación en cursos para realizar el cálculo de cohorte.
+* Mes de fin: mes de fin de matriculación en cursos para realizar el cálculo de cohorte.
+* Cero a usuarios sin calificar: asignar un valor de calificación de cero a alumnos sin calificaciones asignadas.
+* Color de calificación vacía
+* Color de calificación suspensa: teniendo en cuenta la nota de corte configurada en la sección General.
+* Color de calificación aprobada: teniendo en cuenta la nota de corte configurada en la sección General.
+
+
+.. figure:: images/Configuracion_flujo_cohorte.png
+  :width: 600
+  :alt: Flujo por cohorte
+  :align: center
+  
+  Flujo por cohorte
 
 Finalización Actividad (Pestaña Análisis visual - Actividades finalizadas)
 --------------------------------------------------------------------------
@@ -262,32 +297,50 @@ Configura los colores para los distintos intervalos de la barra de progreso.
   Finalización Actividad
   
   
-Compromiso (Lineal) (Pestaña Riesgo de abandono)
-------------------------------------------------
+Clasificación (Pestaña - Comparaciones)
+---------------------------------------
 
-* Límite de días: establece el límite superior en días para el abandono.
-* Configura los colores para los gráficos de compromiso lineal.
+* Ranking estadístico: cambia la opción de mostrar el ranking con empates o sin empates.
 
+Configura los colores para los distintos valores en las barras de progreso.
 
-.. figure:: images/Configuracion_compromiso_lineal.png
+.. figure:: images/Configuracion_clasificacion.png
   :width: 600
-  :alt: Compromiso (Lineal)
+  :alt: Clasificación
   :align: center
   
-  Compromiso lineal
-  
-Compromiso (Logarítmico) (Pestaña Riesgo de abandono)
------------------------------------------------------
-
-Configura los colores para los gráficos de compromiso logarítmico.
+  Clasificación
 
 
-.. figure:: images/Configuracion_compromiso_log.png
+Puntuaciones (Pestaña - Comparaciones)
+---------------------------------------
+
+* Ranking estadístico: cambia la opción de mostrar el ranking con empates o sin empates.
+
+Configura los colores para los distintos valores en las barras de progreso.
+
+.. figure:: images/Configuracion_puntuaciones.png
   :width: 600
-  :alt: Compromiso (Logarítmico)
+  :alt: Puntuaciones
   :align: center
   
-  Compromiso logarítmico
+  Puntuaciones
+
+  
+Evolución (Pestaña - Comparaciones)
+---------------------------------------
+ 
+* Usar solo círculos: no utilizar figuras geométricas para representar a los estudiantes.
+* Duración de transición (ms)
+* Duración de imagen (ms)
+
+.. figure:: images/Configuracion_evolucion.png
+  :width: 600
+  :alt: Evolución
+  :align: center
+  
+  Evolución
+  
   
 Barras (Pestaña Foros)
 -----------------------
@@ -352,6 +405,7 @@ El resto de opciones son relativas a la física de desplazamiento de nodos, dibu
   :align: center
   
   Árbol de conversación
+ 
 
 Nube de palabras (Pestaña Foros)
 --------------------------------
@@ -372,4 +426,83 @@ Nube de palabras (Pestaña Foros)
   :align: center
   
   Nube de palabras
+  
 
+Compromiso (Lineal) (Pestaña Riesgo de abandono)
+------------------------------------------------
+
+* Límite de días: establece el límite superior en días para el abandono.
+* Configura los colores para los gráficos de compromiso lineal.
+
+
+.. figure:: images/Configuracion_compromiso_lineal.png
+  :width: 600
+  :alt: Compromiso (Lineal)
+  :align: center
+  
+  Compromiso lineal
+  
+Compromiso (Logarítmico) (Pestaña Riesgo de abandono)
+-----------------------------------------------------
+
+Configura los colores para los gráficos de compromiso logarítmico.
+
+
+.. figure:: images/Configuracion_compromiso_log.png
+  :width: 600
+  :alt: Compromiso (Logarítmico)
+  :align: center
+  
+  Compromiso logarítmico
+  
+Matriculaciones barras (Pestaña Matriculación)
+-----------------------------------------------------
+
+* Modo horizontal: muestra el gráfico en horizontal.
+* Mes de inicio: mes de inicio de matriculación en cursos para realizar el cálculo de cohorte.
+* Mes de fin: mes de fin de matriculación en cursos para realizar el cálculo de cohorte.
+* Frecuencia mínima: número mínimo de alumnos matriculados en un curso para mostrarse.
+
+
+.. figure:: images/Configuracion_matriculaciones_barras.png
+  :width: 600
+  :alt: Matriculaciones barras
+  :align: center
+  
+  Matriculaciones barras
+  
+Grafo (Pestaña Matriculación)
+-----------------------------------------------------
+
+* Frecuencia mínima: número mínimo de estudiantes en común para mostrarse el arco.
+* Mostrar curso actual: añadir el nodo con el curso actual al grafo.
+* Mostrar nodos sin aristas: mostrar nodos que no tienen aristas conectadas.
+* Usar iniciales de nombres: utilizar las iniciales del los nombres para identificar los nodos o cursos.
+* Habilitar la física después de dibujar
+* Aristas -> Información detallada: mostrar los datos de estudiantes matriculadas en los tooltips de las aristas.
+
+El resto de opciones son relativas a la física de desplazamiento de nodos, dibujado de aristas y colocación de nodos en pantalla. 
+
+.. figure:: images/Configuracion_grafo_matriculacion.png
+  :width: 600
+  :alt: Grafo de matriculacion
+  :align: center
+  
+  Grafo de matriculación
+  
+  
+Flujo de matriculación (Pestaña Matriculación)
+-----------------------------------------------------
+
+* Color de los usuarios: color asignado a la barra de usuarios.
+* Color de los enlaces: color asignado al flujo que conecta con los cursos.
+* Color de los cursos: color asignado a las barras de cursos.
+* Frecuencia mínima: número mínimo de estudiantes en común para mostrarse el arco.
+
+
+.. figure:: images/Configuracion_flujo_matriculacion.png
+  :width: 600
+  :alt: Flujo de matriculación
+  :align: center
+  
+  Flujo de matriculación

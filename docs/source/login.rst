@@ -10,7 +10,7 @@ Una vez arrancada la aplicación se mostrará la pantalla de inicio de sesión. 
   
   Inicio de sesión
   
-A continuación se deben introducir las credenciales de **Usuario** y **Contraseña** en Moodle. 
+A continuación se deben introducir las credenciales de **Usuario** y **Contraseña** en Moodle. Por defecto se oculta el password (icono de ojo tachado), pero si se pulsa el icono *Mostrar contraseña*, se visualizar en pantalla. Volviendo a presionar en el icono, se vuelve a ocultar. Utilizar esta opción con precaución. 
 
 **MUY IMPORTANTE:** la aplicación **NUNCA** almacena de forma persistente, ni renvía a otros servidores, el *password* del usuario, por motivos de seguridad. El código fuente está disponible para su auditoria y se puede comprobar qué datos y a qué servidor se envían, con un software de análisis de red o *sniffer* (e.g.  Wireshark, Microsoft Message Analyzer, Tcpdump, etc.).
 

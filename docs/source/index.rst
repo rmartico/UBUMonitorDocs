@@ -22,8 +22,10 @@ Manual de usuario para UBUMonitor
    visualization/logs
    visualization/grades  
    visualization/activities
-   droprisk/index
+   comparisons/index
    forums/index
+   droprisk/index
+   enrollment/index
    calendar/index
    clustering/index
    configuration

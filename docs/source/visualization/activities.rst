@@ -3,7 +3,11 @@ Visualización de finalización de actividad
 
 La finalización de actividades muestra el estado actual de cada actividad, sobre la que se ha activado el rastreo. 
 
-Para cada actividad se muestra su estado, con un stick verde si está completada, con un aspa roja si se ha realizado, pero no superado, y en blanco si no se ha realizado. Si posicionamos el cursor en cualquiera de las casillas, se muestra en un *tooltip* la fecha y hora de finalización.
+Para cada actividad se muestra su estado, con un stick azul si está completada, con un aspa roja si se ha realizado, pero no superado, y en blanco si no se ha realizado. 
+
+Si la tarea se marca manualmente tiene un recuadro continuo, si se marca automáticamente al cumplir las condiciones configuradas, tiene un recuadro discontinuo. Si la tarea ha sido marcada manualmente por el profesor, se marca con un recuadro rojo.
+
+Si posicionamos el cursor en cualquiera de las casillas, se muestra en un *tooltip* la fecha y hora de finalización.
 
 .. figure:: images/Actividades.png
   :width: 750
@@ -13,7 +17,7 @@ Para cada actividad se muestra su estado, con un stick verde si está completada
   Tabla de finalización de actividades
   
   
-En la última columna se muestra el progreso del número de actividades para cada usuario, con el número completado del total y el porcentaje. La barra de progreso se colorea en función del porcentaje (i.e. en la configuración por defecto se tiene rojo < 25%, salmón entre [26%, 50%), amarillo entre [50%, 75%), verde claro entre [75%, 99%) y verde oscuro para 100%).
+En la segunda columna se muestra el progreso del número de actividades para cada usuario, con el número completado del total y el porcentaje. La barra de progreso se colorea en función del porcentaje (i.e. en la configuración por defecto se tiene rojo < 25%, salmón entre [26%, 50%), amarillo entre [50%, 75%), verde claro entre [75%, 99%) y verde oscuro para 100%).
 
 En la cabecera de cada columna se muestra el número de usuarios que han completado la actividad y el porcentaje sobre el total de usuarios.
 

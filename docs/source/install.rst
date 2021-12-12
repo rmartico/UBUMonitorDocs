@@ -1,7 +1,7 @@
 Instalación y arranque
 ======================
 
-Desde la versión 2.6.5 de UBUMonitor, se distribuye un **instalador** que descarga la última versión disponible de UBUMonitor. En siguientes ejecuciones comprobará si existen nuevas versiones disponibles, y en caso de existir, consultará al usuario si quiere actualizar la aplicación. Se puede consultar el vídeo de instalación en `YouTube <https://www.youtube.com/watch?v=hEX1UJBEFlY>`_.
+Desde la versión 2.6.5 de UBUMonitor, se distribuye un **instalador** que descarga la última versión disponible de UBUMonitor. En siguientes ejecuciones comprobará si existen nuevas versiones disponibles, y en caso de existir, consultará al usuario si quiere actualizar la aplicación. Se puede consultar el vídeo de instalación para Windows en `YouTube <https://www.youtube.com/watch?v=hEX1UJBEFlY>`_ y para MacOS en`YouTube <https://www.youtube.com/watch?v=VKVzyPEm9nA>`_.
 
 Para descargar el instalador acceder a siguiente `enlace <https://github.com/yjx0003/UBUMonitorLauncher/releases/latest>`_.
 
@@ -18,13 +18,15 @@ Se mostrará una entrada similar a la siguiente, desplegando el elemento **Asset
 
 Se muestran los posibles ficheros a descargar para su ejecución (y desarrollo con los códigos fuentes). Para su instalación solo interesan los siguientes ficheros:
 
-* ``UBUMonitorLauncher.v1.0.0-stable-Linux64-Portable.xz``: versión portable para sistema operativo GNU/Linux 64 bits.
-* ``UBUMonitorLauncher.v1.0.0-stable-macOS64-Portable.xz``: versión portable para sistema operativo Mac OS 64 bits.
-* ``UBUMonitorLauncher.v1.0.0-stable-Win32-Portable.zip``: versión portable para sistema operativo Windows 32 bits.
+* ``UBUMonitorLauncher.v1.0.0-stable-Mac64-Portable.dmg``: versión portable para sistema operativo Mac OS 64 bits.
 * ``UBUMonitorLauncher.v1.0.0-stable-Win32-Portable.exe``: versión portable autoextraíble para sistema operativo Windows 32 bits.
-* ``UBUMonitorLauncher.v1.0.0-stable-Win64-Portable.zip``: versión portable para sistema operativo Windows 64 bits.
+* ``UBUMonitorLauncher.v1.0.0-stable-Win32-Portable.zip``: versión portable para sistema operativo Windows 32 bits.
 * ``UBUMonitorLauncher.v1.0.0-stable-Win64-Portable.exe``: versión portable autoextraíble para sistema operativo Windows 64 bits.
+* ``UBUMonitorLauncher.v1.0.0-stable-Win64-Portable.zip``: versión portable para sistema operativo Windows 64 bits.
+* ``UBUMonitorLauncher.v1.0.0-stable-Win64-Setup.exe``: versión portable con instalador para sistema operativo Windows 64 bits.
 * ``UBUMonitorLauncher.v1.0.0-stable.jar``: versión multiplataforma ejecutable con Java instalado en el sistema operativo. Versión para Windows, GNU/Linux o Mac.
+* ``UBUMonitorLauncher.v1.0.0-stable-Linux64-Portable.xz``: versión portable para sistema operativo GNU/Linux 64 bits.
+
 
 ..
 	* ``UBUMonitor.v2.6.3-stable-Linux64-Portable.xz``: versión portable para sistema operativo GNU/Linux 64 bits.
@@ -34,7 +36,8 @@ Se muestran los posibles ficheros a descargar para su ejecución (y desarrollo c
 
 Se ofrecen las siguientes versiones: 
 
-* Versión portable (con mínima instalación) para **Windows** (descomprimiendo el fichero ``.zip``), **GNU/Linux** y **Mac OS** (descomprimiendo el fichero ``.xz``). 
+* Versión portable instalable para MacOS como fichero ``.dmg``.
+* Versión portable (con mínima instalación) para **Windows** (descomprimiendo el fichero ``.zip``) y **GNU/Linux** (descomprimiendo el fichero ``.xz``). 
 * Versión portable autoextraíble si no se dispone de un descompresor (con mínima instalación) para **Windows**, ejecutando directamente ficheros con extensión ``.exe``. 
 * Versión fichero ejecutable java (con extensión ``.jar``) para **TODAS** las plataformas.
 
@@ -54,18 +57,18 @@ Pasos para su instalación:
 *Nota: las versiones portables incluyen dentro del fichero ``.xz`` un JRE 8 con JavaFX, por eso ocupan más espacio.*
 
 
-Versión portable para Mac OS
+Versión para Mac OS
 ----------------------------
 
-Si se trabaja en Mac OS, y no se quiere instalar Java en el equipo actual (o no se quiere cambiar la configuración), se sugiere descargar la versión portable de 64 bits. 
+Si se trabaja en Mac OS, y no se quiere instalar Java en el equipo actual (o no se quiere cambiar la configuración), se sugiere descargar la versión ``.dmg`` de 64 bits. 
 
 Pasos para su instalación:
 
-* Copiar el fichero descargado con sufijo ``-Portable.xz`` a un directorio a libre elección del usuario, donde tenga permisos de escritura y ejecución.
-* Descomprimir el fichero con sufijo ``-Portable.xz`` correspondiente con alguna herramienta tipo tar, gzip, bzip2, etc. Por ejemplo: ``tar -Jxf UBUMonitorLauncher.v1.0.0-stable-macOS64-Portable.xz``.
-* En el directorio generado al descomprimir, ejecutar el script ``run.sh``. Puede ser necesario dar permisos de ejecución a dicho script con el comando ``chmod +x run.sh``.
+* Descargar el fichero con extensión ``.dmg`` y abrimos la carpeta de descarga.
+* Abrir el fichero y copiarlo en *Aplicaciones*. 
+* Ejecutar la aplicación. La primera vez puede dar un error por no reconocerse como aplicación de confianza. Para corregir este problema, abrimos *Preferencias del Sistema* y seleccionamos *Seguridad y privacidad*. Seleccionamos *Abrir igualmente* y confirmamos la ejecución con *Abrir*. 
 
-*Nota: las versiones portables incluyen dentro del fichero ``.xz`` un JRE 8 con JavaFX, por eso ocupan más espacio.*
+*Nota: las versiones portables incluyen un JRE 8 con JavaFX, por eso ocupan más espacio.*
 
 
 Versión portable para Windows

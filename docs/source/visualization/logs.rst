@@ -99,21 +99,6 @@ Muestra el total de número de registros de los usuarios filtrados en un periodo
   
 Si seleccionamos grupos, se muestran sus totales, teniendo en cuenta el filtro por rol. Adicionalmente se pueden seleccionar usuarios sobre la lista de filtrados, para visualizar los totales sobre dicho grupo ficticio.
 
-Gráfico de barras apiladas
---------------------------
-
-Muestra en barras apiladas el número de registros para cada uno de los usuarios seleccionados. Se utilizan diferentes colores para cada uno de los elementos. También se apilan las líneas que indican el valor medio de los usuarios filtrados en ese momento.
-
-.. figure:: images/GraficoBarrasApiladas.png
-  :width: 600
-  :alt: Grafico de Barras Apiladas
-  :align: center
-  
-  Gráfico BarrasApiladas
-
-Si se coloca el cursor sobre una barra apilada, se muestra en un *tooltip*, la identidad del alumno y el desglose de valores.
-
-Si se ajusta el valor máximo en **Cambiar escala máxima sugerida:** se recalcula y ajusta el máximo en el eje Y.
   
 Gráfico de HeatMap
 ------------------
@@ -248,19 +233,24 @@ Muestra la distribución temporal de los registros a lo largo del tiempo para el
   
   Gráfico de dispersión de usuarios
   
-Tabla de logs
--------------
 
-Muestra la tabla desglosada con la información detallada de los registros seleccionados. La tabla permite la ordenación y filtrado de los datos en las opciones de la parte superior de la tabla.
+Gráfico de barras apiladas
+--------------------------
 
-.. figure:: images/tabla_logs.png
+Muestra en barras apiladas el número de registros para cada uno de los usuarios seleccionados. Se utilizan diferentes colores para cada uno de los elementos. También se apilan las líneas que indican el valor medio de los usuarios filtrados en ese momento.
+
+.. figure:: images/GraficoBarrasApiladas.png
   :width: 600
-  :alt: Tabla de logs
+  :alt: Grafico de Barras Apiladas
   :align: center
   
-  Tabla de logs
-  
-  
+  Gráfico BarrasApiladas
+
+Si se coloca el cursor sobre una barra apilada, se muestra en un *tooltip*, la identidad del alumno y el desglose de valores.
+
+Si se ajusta el valor máximo en **Cambiar escala máxima sugerida:** se recalcula y ajusta el máximo en el eje Y.
+ 
+ 
 Sesión
 ------
 
@@ -278,3 +268,14 @@ El valor por defecto de duración de la sesión está establecido a 60 minutos, 
 Se debe tener en cuenta que los valores son estimados, considerando una nueva sesión cuando ha transcurrido más del tiempo límite de sesión entre dos registros sucesivos. En caso contrario, se considera que son eventos de la misma sesión y se acumulan los tiempos.
   
 
+Tabla de logs
+-------------
+
+Muestra la tabla desglosada con la información detallada de los registros seleccionados. La tabla permite la ordenación y filtrado de los datos en las opciones de la parte superior de la tabla.
+
+.. figure:: images/tabla_logs.png
+  :width: 600
+  :alt: Tabla de logs
+  :align: center
+  
+  Tabla de logs
