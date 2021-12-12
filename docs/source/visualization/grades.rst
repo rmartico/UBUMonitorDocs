@@ -116,4 +116,16 @@ Muestra un diagrama de barras apiladas con el porcentaje de los alumnos seleccio
 La nota de corte se puede cambiar, ver Sec :ref:`configuration`, en el apartado **General**.
 
 
+Flujo por cohorte
+-----------------
 
+Muestra el flujo de número de alumnos, por cohortes de ingreso, que han superado, suspenden o no están calificados, sobre una o varias pruebas de calificación. Adicionalmente se muestra también el flujo por grupos, si están definidos dichos grupos.
+
+.. figure:: images/flujo_por_cohorte.png
+  :width: 600
+  :alt: Flujo por cohorte
+  :align: center
+  
+  Flujo por cohorte
+
+Cuando se seleccionan varios items de calificación, se calcula la media de las calificaciones. La nota de corte, para determinar si aprueban o suspenden, está definida en la configuación general de la aplicación. 

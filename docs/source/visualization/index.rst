@@ -23,10 +23,11 @@ La pantalla principal se divide en:
  
 En las vistas de usarios y de registros/calificaciones y actividades, se permite la selección múltiple de varios elementos sueltos, manteniendo pulsada la tecla ``Control`` mientras se seleccionan con el ratón, y de elementos contiguos pulsando la tecla ``Mayus``. Con la combinación ``Ctrl`` + ``A`` se seleccionan todos los elementos de la vista.
 
-En los gráficos y tablas generados en la zona central, se habilita siempre un menú contextual (con botón derecho del ratón), permitiendo la **exportación de los datos** en:
+En los gráficos y tablas generados en la zona central, se habilita siempre un menú contextual (con botón derecho del ratón), permitiendo la **exportación de los datos** y la **copia de imagen** al portapapeles en:
 
 * Formato gráfico ``PNG``.
 * Formato texto ``CSV``.
+* Copiar imagen
 * Formato texto ``CSV`` desglosando los datos (si está disponible dicha opción)
 
 .. figure:: images/Menu_contextual_exportacion.png
@@ -73,6 +74,8 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 
 * **Exportar dashboard**: genera una hoja de cálculo Excel (**.xlsx solo compatible para versiones de Excel 2013 o superiores**) que incluye hojas con la información general, de registros y calificaciones de los alumnos. La hoja es dinámica, permitiendo la consulta y filtrado de datos, en una forma similar de trabajo (pero no igual) a la que se realiza con UBUMonitor.
 
+* **Exportar informe ranking..**: genera un informe de ranking de los alumnos basado en registros, calificaciones y finalización de actividades.
+
 * **Archivar curso**: permite realizar una copia de seguridad en la caché local para su posterior acceso en modo desconectado u *offline*. Útil cuando al principio de curso se borran los datos de cursos anteriores y no se quiere perder dichos datos.
 
 * **Cerrar sesión**: cierra la sesión actual y vuelve a la pantalla de inicio de sesión.
@@ -84,6 +87,8 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 * **Borrar selección**: elimina la selección actual de todas las vistas disponibles.
 
 * **Importar registros**: permite sustituir los registros actuales por los datos de un fichero de log exportado en Moodle. Es requisito imprescindible que el fichero se haya exportado en inglés para una correcta importación.
+
+* **Purgar registros**: elimina los registros (logs) almacenados hasta la actualidad.
 
 **Ver**
 
@@ -117,6 +122,16 @@ En la parte superior de la ventana muestra una barra de menú con diferentes opc
 * **Manual de usuario**: abre el enlace al manual de usuario correspondiente a la versión utilizada en el navegador por defecto.  
 
 * **Repositorio en GitHub**: enlaza con el repositorio GitHub del proyecto UBUMonitor, en la ventana del navegador por defecto.
+
+* **Enviar comentario**: permite el envío anónimo (o añadiendo la información de contacto) de comentarios y sugerencias para los autores de la herramienta.
+
+.. figure:: images/comentarios_y_sugerencias.png
+  :width: 400
+  :alt: Comentarios y sugerencias
+  :align: center
+  
+  Comentarios y sugerencias
+
 
 * **Más información**: abre la página comercial o *landing page* de UBUMonitor.
 
